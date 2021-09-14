@@ -1,0 +1,11 @@
+<div class="projects">
+	<h2>Projects</h2>
+{% for project in site.projects %}
+	<div class="project-card">
+		<h3>{{ project.name }}</h3>
+		<p>{{ project.conntent }}</p>
+		<hr/>
+		<a href="{{ project.repository }}">Repository</a>
+	</div>
+{% endfor %}
+</div>
