@@ -15,12 +15,17 @@ h2
   text-align: center
 
 // CLASSES
+.content-centerer
+  max-width: 80em 
+  margin: auto
+
 .logo
   margin: 2em auto
   display: inline-block
   width: 100%
   text-align: center
   color: $text-color
+  background-color: 
 
 .title-big
   font-size: 10em
@@ -32,6 +37,28 @@ h2
   display: inline-block
   color: $highlight-color
 
+//-----------------------------------
+
+.nav
+  height: 4em
+  display: block
+  background-color: $block-color
+  left: 50%
+  text-align: center
+  padding: 0.5em
+
+  a
+    background-color: $highlight-color
+    display: inline-block
+    height: 3em
+    width: 10em
+    position: relative
+    border: 3px solid $text-color
+    margin: 0 auto
+    color: $text-color
+
+//-----------------------------------
+
 .split
   overflow: hidden
 
@@ -39,24 +66,33 @@ h2
   width: 50%
   float: left
 
+//-----------------------------------
+
 .members 
+  margin-left: auto
+  margin-right: auto
 
 .member
   background-color: $block-color 
   padding: 1em
   margin: 1em
-  float: right
   width: 40%
+  display: inline-block
   
   img
     float: left
     display: block
+    width: 33%
+    margin: 0.5em
+
+//------------------------------------
 
 .feed
   margin: 1em
+  overflow-y: auto
 
 .feed-post
-  background-color: $highlight-color
+  background-color: $block-color
   padding: 1em
   margin: 1em
 
