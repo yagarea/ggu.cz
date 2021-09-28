@@ -1,28 +1,20 @@
 <div class="members">
 	<h2>Members</h2>
-	{% include member.html
-		name="Jan Černý"
-		image="/assets/img/jc.jpg"
-		school="KAM MFF UK"
-		description="d"
-		website="blackblog.cz"
-		github=""
-	%}
-	{% include member.html
-		name="Tomáš Sláma"
-		image="/assets/img/ts.jpg"
-		school="MFF UK"
-		description="bbbbbbbbbbb"
-		website="slama.dev"
-		github=""
-	%}
-	{% include member.html
-		name="David Koňařík"
-		image="/assets/img/jc.jpg"
-		school="MFF UK"
-		description="ccccccccccccccc"
-		website="slama.dev"
-		github=""
-	%}	
+	{% for member in site.members %}
+		<div class="member">
+        	<img src="{{ member.image }}"/>
+        	<h3>{{ member.name }}</h3>
+        	<b>{{ member.school }}</b>
+        	<br/>
+        	{{ member.content }}
+        	<hr/>
+        	<ul>
+            	<li>Website: <a href="https://{{ member.website }}/">{{ member.website }}</a></li>
+                {% if member.github %}
+                	<li>Github: <a href="https://{{ member.github }}/">{{ member.github }}</a></li>
+                {% endif %}
+        	</ul>
+		</div>
+	{% endfor %}
 </div>
 
