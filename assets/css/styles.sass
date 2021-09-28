@@ -13,6 +13,13 @@ body
 
 h2
   text-align: center
+  font-size: 2.5em
+
+h3
+  font-size: 1.75em
+
+a
+  color: $text-color
 
 // CLASSES
 .content-centerer
@@ -47,15 +54,23 @@ h2
   text-align: center
   padding: 0.5em
 
+
+.nav-button
+  background-color: $background-color
+  display: inline-block
+  height: 3em
+  width: 10em
+  position: relative
+  border: 3px solid $background-color
+  margin: 0 auto
+  padding: 0
+  
   a
-    background-color: $highlight-color
-    display: inline-block
-    height: 3em
-    width: 10em
-    position: relative
-    border: 3px solid $text-color
-    margin: 0 auto
-    color: $text-color
+    color: $highlight-color
+    text-decoration: none !important
+    font-size: 2em
+    margin-top: 1em
+
 
 //-----------------------------------
 
@@ -78,12 +93,20 @@ h2
   margin: 1em
   width: 40%
   display: inline-block
+  border-radius: 10px
   
   img
     float: left
     display: block
     width: 33%
     margin: 0.5em
+  
+  h3
+    margin: 0.5em 0 0 0
+  
+  ul
+    margin: 0.5em
+    float: right
 
 //------------------------------------
 
@@ -94,8 +117,14 @@ h2
   background-color: $block-color
   padding: 1em
   margin: 1em
+  display: inline-block
+  border-radius: 15px
+
+  h3
+    margin: 0.3em 0
 
 //------------------------------------
+
 .feed
   margin: 1em
   overflow-y: auto
@@ -104,4 +133,9 @@ h2
   background-color: $block-color
   padding: 1em
   margin: 1em
+
+//------------------------------------
+
+.highlight
+  background-color: $background-color
 
