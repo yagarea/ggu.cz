@@ -4,7 +4,8 @@
 			<p>{{ post.content }}</p>
 			<div class="feed-author">
 				{{ post.author }}
-				<i>{{ post.date }}</i>
+				<br/>
+				<i>{{ post.date |  date: "%-d %B %Y" }}</i>
 			</div>
 		</div>
 	{% endfor %}
