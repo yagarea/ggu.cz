@@ -1,3 +1,3 @@
 # GGU.cz
 
-Home page of group of friends and geeks.
+The source code for the GGU.cz website.
