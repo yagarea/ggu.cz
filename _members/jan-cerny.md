@@ -1,7 +1,7 @@
 ---
 name: "Jan Černý"
 image: "/assets/img/jc.jpg"
-school: "KAM MFF UK"
+school: "MFF UK"
 website: "blackblog.cz"
 github: "github.com/yagarea/"
 ---
