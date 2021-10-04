@@ -2,8 +2,9 @@
 name: "Jan Černý"
 image: "/assets/img/jc.jpg"
 school: "MFF UK"
-website: "blackblog.cz"
-github: "github.com/yagarea/"
+external-links:
+  - { title: "website", link: "blackblog.cz" }
+  - { title: "github", link: "github.com/yagarea/" }
 ---
 
 I am a student of computer science and mathematics. 
