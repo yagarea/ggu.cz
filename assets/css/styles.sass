@@ -54,16 +54,17 @@ a
   background-color: $block-color
   left: 50%
   text-align: center
-  padding: 0.5em
   display: flex
   justify-content: center
   gap: 10px
   flex-direction: row
+  height: 5em
 
 .nav-button
   background-color: $background-color
   height: 3em
   width: 10em
+  margin: auto 0
   position: relative
   border: 3px solid $background-color
   padding: 0
@@ -73,7 +74,12 @@ a
     color: $highlight-color
     text-decoration: none !important
     font-size: 2em
-    margin-top: 1em
+    margin: 0
+    position: absolute
+    top: 50%
+    left: 50%
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
 
 
 //-----------------------------------
