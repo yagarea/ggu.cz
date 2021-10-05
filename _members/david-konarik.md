@@ -1,6 +1,6 @@
 ---
 name: "David Koňařík"
-image: "/assets/img/jc.jpg"
+image: "/assets/img/dk.jpg"
 school: "MFF UK"
 external-links:
   - { title: "website", link: "slama.dev" }
