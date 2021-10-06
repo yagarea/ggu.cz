@@ -7,6 +7,8 @@ $block-color:      #005792
 $highlight-color:  #00BBf0
 $text-color:       #FDB44B
 
+
+// BASICS
 body
   background-color: $background-color
   color: $text-color
@@ -20,6 +22,11 @@ h3
 
 a
   color: $text-color
+  border-radius: 2px
+  padding: 2px
+
+  &:hover
+    background-color: lighten($background-color, 10%)
 
 // CLASSES
 .content-centerer
@@ -33,15 +40,23 @@ a
   text-align: center
   color: $text-color
 
+  a
+    text-decoration: none
+
+    &:hover
+      background-color: $background-color
+
 .title-big
   font-size: 10em
   display: inline-block
   color: $highlight-color
+  text-shadow: 10px 5px black
 
 .title-small
   font-size: 3em
   display: inline-block
   color: $highlight-color
+  text-shadow: 10px 5px black
 
 //-----------------------------------
 
@@ -50,25 +65,40 @@ a
   background-color: $block-color
   left: 50%
   text-align: center
-  padding: 0.5em
   display: flex
   justify-content: center
   gap: 10px
   flex-direction: row
+  height: 5em
 
 .nav-button
   background-color: $background-color
   height: 3em
   width: 10em
+  margin: auto 0
   position: relative
   border: 3px solid $background-color
   padding: 0
+  border-width: 1px
+  border-style: solid
+  border-color: $text-color
+  border-radius: 5px
+  box-shadow: 2px 4px 6px black
+
+  &:hover
+    background-color: lighten($background-color, 10%)
+    
   
   a
-    color: $highlight-color
+    color: $text-color
     text-decoration: none !important
     font-size: 2em
-    margin-top: 1em
+    margin: 0
+    position: absolute
+    top: 50%
+    left: 50%
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
 
 
 //-----------------------------------
@@ -96,13 +126,18 @@ a
   margin: 1em
   width: 40%
   display: inline-block
-  border-radius: 10px
+  border-radius: 5px
+  box-shadow: 2px 2px 4px black
   
   img
     float: left
     display: block
     width: 33%
     margin: 0.5em
+    border-radius: 5px
+    border-width: 1px
+    border-style: solid
+    border-color: $text-color
   
   h3
     margin: 0.5em 0 0 0
@@ -140,6 +175,7 @@ a
   padding: 1em
   margin: 1em
   overflow: hidden
+  border-radius: 5px
 
 .feed-author
   float: right
@@ -149,7 +185,11 @@ a
 //------------------------------------
 
 .highlight
-  background-color: $background-color
+  background-color: darken($background-color, 10%)
   margin: 0.5em
   padding: 1em
+
+.highlighter-rouge
+  background-color: $background-color
+  padding: 2px 4px
 

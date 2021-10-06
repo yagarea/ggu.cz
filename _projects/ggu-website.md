@@ -3,4 +3,6 @@ name: "GGU website"
 repository: github.com
 ---
 
-GGU website aaaaaa aaaaaaaa aaaaaaaaaa aaaaa aaaaa
+Literally website you are on in this moment.
+
+![ggu logo screenshot](https://blackblog.cz/assets/img/projects/ggu-website.png)

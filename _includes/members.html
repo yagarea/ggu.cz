@@ -8,10 +8,9 @@
         	{{ member.content }}
         	<hr/>
         	<ul>
-            	<li>Website: <a href="https://{{ member.website }}/">{{ member.website }}</a></li>
-                {% if member.github %}
-                	<li>Github: <a href="https://{{ member.github }}/">{{ member.github }}</a></li>
-                {% endif %}
+				{% for el in member.external-links %}
+				<li>{{ el.title }}: <a href="https://{{ el.link }}/">{{ el.link }}</a></li>
+				{% endfor %}
         	</ul>
 		</div>
 	{% endfor %}
