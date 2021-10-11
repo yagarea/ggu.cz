@@ -1,32 +1,57 @@
 ---
 ---
 
+// Default colors
 // https://www.csscolorpalettes.com/palettes/594
-$background-color: #00204A
-$block-color:      #005792
-$highlight-color:  #00BBf0
-$text-color:       #FDB44B
+body
+	--background-color: #2d2d2d
+	--background-color-hover: #{lighten(#2d2d2d, 10%)}
+	--background-color-highlight: #{darken(#2d2d2d, 10%)}
+	--block-color: #253d4d
+	--highlight-color: #baf0ff
+	--text-color: #eaeaea
+	--text-highlight-color: #fdb44b
+
+body.theme-classic
+	--background-color: #00204a
+	--background-color-hover: #{lighten(#00204a, 10%)}
+	--background-color-highlight: #{darken(#00204a, 10%)}
+	--block-color: #005792
+	--highlight-color: #00BBf0
+	--text-color: #FDB44B
+	--text-highlight-color: #FDB44B
+
+$background-color: var(--background-color)
+$background-color-hover: var(--background-color-hover)
+$background-color-highlight: var(--background-color-highlight)
+$block-color: var(--block-color)
+$highlight-color: var(--highlight-color)
+$text-color: var(--text-color)
+$text-highlight-color: var(--text-highlight-color)
 
 
 // BASICS
 body
   background-color: $background-color
   color: $text-color
+  margin: 0
 
 h2
+  color: $text-highlight-color
   text-align: center
   font-size: 2.5em
 
 h3
+  color: $text-highlight-color
   font-size: 1.75em
 
 a
-  color: $text-color
+  color: $text-highlight-color
   border-radius: 2px
   padding: 2px
 
   &:hover
-    background-color: lighten($background-color, 10%)
+    background-color: $background-color-hover
 
 // CLASSES
 .content-centerer
@@ -86,7 +111,7 @@ a
   box-shadow: 2px 4px 6px black
 
   &:hover
-    background-color: lighten($background-color, 10%)
+    background-color: $background-color-hover
     
   
   a
@@ -100,6 +125,23 @@ a
     -ms-transform: translate(-50%, -50%)
     transform: translate(-50%, -50%)
 
+
+//------------------------------------
+
+footer
+	width: 100%;
+	background-color: $background-color-highlight
+
+	ul.theme-selector
+		display: inline-flex
+		flex-direction: row
+
+		list-style: none
+		padding: 0
+		margin: 0
+
+		li
+			display: inline
 
 //-----------------------------------
 
@@ -185,11 +227,10 @@ a
 //------------------------------------
 
 .highlight
-  background-color: darken($background-color, 10%)
+  background-color: $background-color-highlight
   margin: 0.5em
   padding: 1em
 
 .highlighter-rouge
   background-color: $background-color
   padding: 2px 4px
-
