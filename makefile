@@ -1,13 +1,20 @@
 SHELL=/usr/bin/sh
 
-.PHONY: deploy
+.PHONY: run deploy build upload
+
+run: build
+	bundle exec jekyll serve --trace
 
 deploy: build upload
 
-build:
+build: install
 	bundle exec jekyll clean --trace
 	bundle exec jekyll build --trace
 	tree _site -C -d | sed 's/^/                    /'
+
+install:
+	bundle config set --local path 'vendor/bundle'
+	bundle install
 
 upload:
 	echo Start upload
