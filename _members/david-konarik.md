@@ -3,8 +3,10 @@ name: "David Koňařík"
 image: "/assets/img/dk.jpg"
 school: "MFF UK"
 external-links:
-  - { title: "website", link: "slama.dev" }
+  - { title: "website", link: "dvdkon.gitlab.io" }
   - { title: "github", link: "github.com/dvdkon" }
+  - { title: "gitlab", link: "gitlab.com/dvdkon" }
 ---
 
-I like trains.
+I like [trains](https://rt.jr.ggu.cz/).  
+Also software archeology, but I don't have a pretty site for that yet.
