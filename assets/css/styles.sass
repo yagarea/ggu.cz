@@ -2,16 +2,17 @@
 ---
 
 // Default colors
-// https://www.csscolorpalettes.com/palettes/594
+// https://colorhunt.co/palette/222831393e46b55400eeeeee
 body
-  --background-color: #2d2d2d
-  --background-color-hover: #{lighten(#2d2d2d, 10%)}
-  --background-color-highlight: #{darken(#2d2d2d, 10%)}
-  --block-color: #253d4d
-  --highlight-color: #baf0ff
-  --text-color: #eaeaea
+  --background-color: #222831
+  --background-color-hover: #{lighten(#222831, 10%)}
+  --background-color-highlight: #{darken(#222831, 10%)}
+  --block-color: #393E46
+  --highlight-color: #B55400
+  --text-color: #EEEEEE
   --text-highlight-color: #fdb44b
 
+// https://www.csscolorpalettes.com/palettes/594
 body.theme-classic
   --background-color: #00204a
   --background-color-hover: #{lighten(#00204a, 10%)}
@@ -53,6 +54,22 @@ a
 
   &:hover
     background-color: $background-color-hover
+
+footer
+  width: 100%
+  background-color: $background-color-highlight
+  height: 80px
+
+
+  ul.theme-selector
+    display: inline-flex
+    flex-direction: row
+    list-style: none
+    padding: 0
+    margin: 0
+
+    li
+      display: inline
 
 // CLASSES
 .content-centerer
@@ -128,21 +145,6 @@ a
 
 
 //------------------------------------
-
-footer
-  width: 100%;
-  background-color: $background-color-highlight
-
-  ul.theme-selector
-    display: inline-flex
-    flex-direction: row
-
-    list-style: none
-    padding: 0
-    margin: 0
-
-    li
-      display: inline
 
 //-----------------------------------
 
