@@ -2,6 +2,7 @@
 	<p markdown="1">You can subscribe to [GGU news RSS](/rss.xml).</p>
 	{% for post in site.posts %}
 		<div class="feed-post">
+			<h3>{{ post.title }}</h3>
 			<p>{{ post.content }}</p>
 			<div class="feed-author">
 				{{ post.author }}
