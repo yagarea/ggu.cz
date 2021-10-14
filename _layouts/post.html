@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="feed-post">
+	<h3>{{ title }}</h3>
+	<p>{{ content }}</p>
+	<div class="feed-author">
+		{{ author }}
+		<br/>
+		<i>{{ post.date |  date: "%-d %B %Y" }}</i>
+	</div>
+</div>
+<p>You can subscribe to <a href="/rss.xml">GGU news RSS</a>.</p>
