@@ -30,7 +30,6 @@ $highlight-color: var(--highlight-color)
 $text-color: var(--text-color)
 $text-highlight-color: var(--text-highlight-color)
 
-
 // BASICS
 body
   background-color: $background-color
@@ -58,8 +57,7 @@ a
 footer
   width: 100%
   background-color: $background-color-highlight
-  height: 80px
-
+  height: 20px
 
   ul.theme-selector
     display: inline-flex
@@ -100,6 +98,8 @@ footer
   display: inline-block
   color: $highlight-color
   text-shadow: 10px 5px black
+  margin-left: -20px
+  margin-top: 0
 
 //-----------------------------------
 
@@ -113,11 +113,12 @@ footer
   gap: 10px
   flex-direction: row
   height: 5em
+  padding: 0 1em
 
 .nav-button
   background-color: $background-color
   height: 3em
-  width: 10em
+  width: 13em
   margin: auto 0
   position: relative
   border: 3px solid $background-color
@@ -222,6 +223,14 @@ footer
   overflow: hidden
   border-radius: 5px
 
+  h3
+    margin: 0
+    font-size: 140%
+  
+  img
+    margin: auto
+    display: block
+
 .feed-author
   float: right
   display: inline-block
@@ -237,3 +246,9 @@ footer
 .highlighter-rouge
   background-color: $background-color
   padding: 2px 4px
+
+
+// MEDIA
+@media screen and (max-width: 850px)
+  .project-card, .member
+    width: 100%
