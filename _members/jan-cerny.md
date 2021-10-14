@@ -7,7 +7,5 @@ external-links:
   - { title: "github", link: "github.com/yagarea/" }
 ---
 
-I am a student of computer science and mathematics. 
+I love Informatics, Mathematics, Science, music with distorted guitars and a cup of good tea.
 I am also an organizer for the [Corresdpondece Seminar of Programing](https://ksp.mff.cuni.cz/). 
-My hobbies include science and athletic sports. 
-I love music with distorted guitars and a good cup of tea.
