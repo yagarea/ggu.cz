@@ -7,7 +7,7 @@ run: build
 
 deploy: build upload
 
-build: install
+build:
 	bundle exec jekyll clean --trace
 	bundle exec jekyll build --trace
 	tree _site -C -d | sed 's/^/                    /'
@@ -16,6 +16,6 @@ install:
 	bundle config set --local path 'vendor/bundle'
 	bundle install
 
-upload:
+upload: build
 	echo Start upload
 	rsync -varhIu -e "ssh -p 222" --progress --delete _site/ ggu.cz:/userdata/groups/uzu8/Homepage/
