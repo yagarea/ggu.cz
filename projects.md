@@ -4,8 +4,9 @@ permalink: /projects/
 ---
 
 ## Projects
-
-This is a list of projects made by the GGU members.
+{% include centered-text.html 
+content="This is a list of projects made by the GGU members."
+%}
 
 {% include projects.html %}
 
