@@ -18,7 +18,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: /:categories/:year/:month/:day/:title/
+      permalink: /:year/:month/:day/:title/
 
 exclude:
   - .sass-cache/
