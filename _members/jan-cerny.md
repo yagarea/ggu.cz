@@ -3,7 +3,7 @@ name: "Jan Černý"
 image: "/assets/img/jc.jpg"
 school: "MFF UK"
 external-links:
-  - { title: "website", link: "blackblog.cz" }
+  - { title: "website", link: "cerny.matfyz.cz" }
   - { title: "github", link: "github.com/yagarea/" }
 ---
 
