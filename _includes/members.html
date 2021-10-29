@@ -6,10 +6,12 @@
         	<b>{{ member.school }}</b>
         	<br/>
         	{{ member.content }}
-        	<hr/>
         	<ul>
 				{% for el in member.external-links %}
+				<em>
 				<li>{{ el.title }}: <a href="https://{{ el.link }}/">{{ el.link }}</a></li>
+				</em>
+
 				{% endfor %}
         	</ul>
 		</div>

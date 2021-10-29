@@ -4,9 +4,7 @@
 			<h3>{{ post.title }}</h3>
 			<p>{{ post.content }}</p>
 			<div class="feed-author">
-				{{ post.author }}
-				<br/>
-				<i>{{ post.date |  date: "%-d %B %Y" }}</i>
+				<em>{{ post.author }}</em>, <em>{{ post.date |  date: "%-d. %-m. %Y" }}</em>
 			</div>
 		</div>
 	{% endfor %}
