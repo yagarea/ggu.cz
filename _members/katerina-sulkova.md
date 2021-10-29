@@ -3,8 +3,7 @@ name: "Kačka"
 image: "/assets/img/ks.jpg"
 school: "VSCHT, MFF UK"
 external-links:
-  - { title: "website", link: "slama.dev" }
-  - { title: "github", link: "github.com/xiaoxiae/" }
+  - { title: "website", link: "sulkova.xyz" }
 ---
 
-luv chemstri
+I like chemisty, food, sleep and the person on the right.
