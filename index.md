@@ -2,12 +2,7 @@
 layout: default
 ---
 
-## Members
+{: .centered-text}
+We're a group of friends with similar interests from a small flat in the middle of Prague.
 
 {% include members.html %}
-
----
-
-## About
-
-GGU is a group of friends who share interests and flat in middle of Prague.
