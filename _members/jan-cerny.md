@@ -8,4 +8,4 @@ external-links:
 ---
 
 I love Informatics, Mathematics, Science, music with distorted guitars and a cup of good tea.
-I am also an organizer for the [Corresdpondece Seminar of Programing](https://ksp.mff.cuni.cz/). 
+I am also an organizer for the [Correspondece Seminar of Programing](https://ksp.mff.cuni.cz/). 
