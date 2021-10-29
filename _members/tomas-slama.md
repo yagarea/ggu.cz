@@ -7,4 +7,4 @@ external-links:
   - { title: "github", link: "github.com/xiaoxiae/" }
 ---
 
-I like coffee, climbing, coding and the person on the left.
+I like coffee, climbing, coding and the person <span class="tom-text"></span>.

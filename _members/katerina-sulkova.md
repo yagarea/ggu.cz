@@ -6,4 +6,4 @@ external-links:
   - { title: "website", link: "sulkova.xyz" }
 ---
 
-I like chemisty, food, sleep and the person on the right.
+I like chemisty, food, sleep and the person <span class="kacka-text"></span>.

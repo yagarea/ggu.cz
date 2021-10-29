@@ -252,6 +252,23 @@ main > p
   display: inline-block
   margin: 10px
 
+.tom-text
+  &::after
+    content: 'to the left'
+
+  @media screen and (max-width: 850px)
+    &::after
+      content: 'above'
+
+.kacka-text
+  &::after
+    content: 'to the right'
+
+  @media screen and (max-width: 850px)
+    &::after
+      content: 'bellow'
+
+
 //------------------------------------
 
 .highlight
