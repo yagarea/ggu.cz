@@ -9,7 +9,13 @@
 			<hr/>
 			<p class="right-text">
 			<em>
-			By {{ project.author }}. <a href="{{ project.repository }}">Repository</a>
+				By {{ project.author }}.
+				{% if project.repository %}
+					<a href="{{ project.repository }}">Repository</a>
+				{% endif %}
+				{% if project.website %}
+					<a href="{{ project.website }}">Website</a>
+				{% endif %}
 			</em>
 			</p>
 		</div>
