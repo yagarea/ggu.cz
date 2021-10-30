@@ -5,7 +5,9 @@ school: "MFF UK"
 external-links:
   - { title: "website", link: "cerny.matfyz.cz" }
   - { title: "github", link: "github.com/yagarea/" }
+tags: [jan, Jan, honza, Honza, JC, yagarea]
 ---
 
-I love Informatics, Mathematics, Science, music with distorted guitars and a cup of good tea.
-I am also an organizer for the [Correspondece Seminar of Programing](https://ksp.mff.cuni.cz/). 
+I love Informatics, Mathematics, Science, music with distorted guitars and a cup of 
+good tea.
+
