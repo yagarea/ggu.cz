@@ -1,6 +1,9 @@
 <div class="logo">
 	<a href="/">
 		<div class="title-big">{{ site.title }}</div><div class="title-small">.cz</div>
+		{% if site.subtitle %}
+		<div class="subtitle">{{ site.subtitle }}</div>
+		{% endif %}
 	</a>
 </div>
 
