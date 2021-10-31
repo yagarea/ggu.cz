@@ -5,5 +5,5 @@ author: "GGU members"
 
 The [GGU.cz](/) website was published today!
 
-![Peepo Happy](/assets/img/peepo.jpg)
+![Peepo Happy](/assets/img/reactions/pepe-happy-dancegif.gif)
 
