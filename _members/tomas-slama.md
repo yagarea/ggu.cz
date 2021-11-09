@@ -1,6 +1,6 @@
 ---
 name: "Tomáš Sláma"
-image: "/assets/img/ts.jpg"
+image: "/assets/img/ts/ts.jpg"
 school: "MFF UK"
 external-links:
   - { title: "website", link: "slama.dev" }

@@ -1,6 +1,6 @@
 ---
 name: "David Koňařík"
-image: "/assets/img/dk.jpg"
+image: "/assets/img/dk/dk.jpg"
 school: "MFF UK"
 external-links:
   - { title: "website", link: "dvdkon.gitlab.io" }

@@ -1,6 +1,7 @@
 ---
 name: "Jan Černý"
-image: "/assets/img/jc.jpg"
+image: "/assets/img/jc/jc.jpg"
+logo:  "/assets/img/jc/logo.png" 
 school: "MFF UK"
 external-links:
   - { title: "website", link: "cerny.matfyz.cz" }
