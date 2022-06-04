@@ -1,4 +1,4 @@
-SHELL=/usr/bin/sh
+SHELL=/usr/bin/env sh
 
 .PHONY: run deploy build upload
 
