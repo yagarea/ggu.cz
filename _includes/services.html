@@ -1,0 +1,23 @@
+<div class="services">
+{% for service in site.services %}
+	<div class="service-card">
+			<a href="{{ service.link}}"><h3>{{ service.name }}</h3></a>
+			<div class="service-card-content">
+			{{ service.content }}
+			</div>
+			<div class="service-card-footer">
+				<p class="right-text">
+					<em>
+						{% if service.repository %}
+							<a href="{{ service.repository }}">Repository</a>
+						{% endif %}
+						{% if service.link %}
+							<a href="https://{{ service.link }}">{{ service.link }}</a>
+						{% endif %}
+					</em>
+			</div>
+	</div>
+{% endfor %}
+</div>
+
+
