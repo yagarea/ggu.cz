@@ -18,4 +18,4 @@ install:
 
 upload: build
 	echo Start upload
-	rsync -varhIu -e "ssh -p 222" --progress --delete _site/ ggu.cz:/userdata/groups/uzu8/Homepage/
+	rsync -varhIu -e "ssh -p 222" --progress --delete _site/ ggu.cz:/userdata/groups/uzu8/Web/Homepage
