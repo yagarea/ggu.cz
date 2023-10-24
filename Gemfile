@@ -3,7 +3,7 @@ gem "jekyll", "~> 4.3.2"
 gem "webrick"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jektex"
+  gem "jektex", "~> 0.1.1"
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
