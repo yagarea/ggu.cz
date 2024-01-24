@@ -7,3 +7,4 @@ vendor
 .bundle/
 .jektex-cache
 .vendor
+_data/webring.yml
