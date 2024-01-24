@@ -1,7 +1,7 @@
-<section class="webring">
+<section class="feed">
 	<h2 class="centered-text">Latest posts from GGU members</h2>
 		{%- for item in webring %}
-		<div class="block">
+		<div class="feed-post block">
 			<h3 class="title"><a href="{{ item.url }}" target="_blank" rel="noopener">{{- item.title -}}</a></h3>
 			<p class="summary">{{- item.summary -}}</p>
 			<small class="source">via <a href="{{- item.source_url -}}">{{- item.source_title -}}</a></small>
