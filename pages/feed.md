@@ -5,9 +5,8 @@ permalink: /feed/
 
 ## Feed
 
-{% include centered-text.html 
-content="You can subscribe to [GGU news RSS](/rss.xml)."
-%}
+{: .centered-text}
+You can subscribe to [GGU news RSS](/rss.xml).
 
 {% include feed.html %}
 
