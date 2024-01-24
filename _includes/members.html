@@ -1,25 +1,20 @@
 <div class="members">
-	{% for member in site.members %}
-		<div class="member">
+	{% for member in site.members -%}
+		<div class="member block">
 			<div class="member-image">
 				<img class="member-profile-picture" src="{{ member.image }}"/>
-				{% if member.logo %}
-					<img class="member-logo" src="{{ member.logo }}">
-				{% endif %}
+				{%- if member.logo -%}<img class="member-logo" src="{{ member.logo }}">{%- endif %}
 			</div>
-        	<h3>{{ member.name }}</h3>
-        	<b>{{ member.school }}</b>
-        	<br/>
-        	{{ member.content }}
-        	<ul>
-				{% for el in member.external-links %}
-				<em>
-				<li>{{ el.title }}: <a href="https://{{ el.link }}/">{{ el.link }}</a></li>
-				</em>
-
-				{% endfor %}
-        	</ul>
+			<h3>{{- member.name -}}</h3>
+			<b>{{- member.school -}}</b>
+			<br/>
+			{{- member.content -}}
+			<ul>
+				{% for el in member.external-links -%}
+					<li><em>{{- el.title -}}: <a href="https://{{- el.link -}}/">{{- el.link -}}</a></em></li>
+				{%- endfor %}
+			</ul>
 		</div>
-	{% endfor %}
+	{%- endfor %}
 </div>
 

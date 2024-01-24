@@ -1,11 +1,11 @@
 <div class="feed">
-	{% for post in site.posts %}
+	{%- for post in site.posts %}
 		<div class="feed-post">
-			<h3>{{ post.title }}</h3>
-			<p>{{ post.content }}</p>
+			<h3>{{- post.title -}}</h3>
+			<p>{{- post.content -}}</p>
 			<div class="feed-author">
-				<em>{{ post.author }}</em>, <em>{{ post.date |  date: "%-d. %-m. %Y" }}</em>
+				<em>{{- post.author -}}</em>, <em>{{- post.date |  date: "%-d. %-m. %Y" -}}</em>
 			</div>
 		</div>
-	{% endfor %}
+	{%- endfor %}
 </div>
