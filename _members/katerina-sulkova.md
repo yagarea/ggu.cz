@@ -1,5 +1,5 @@
 ---
-name: "Kačka"
+name: "Kačka Sulková"
 image: "/assets/img/ks/ks.jpg"
 school: "VSCHT, MFF UK"
 external-links:
