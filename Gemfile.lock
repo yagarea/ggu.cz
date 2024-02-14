@@ -23,6 +23,8 @@ GEM
     google-protobuf (3.25.2-x86-linux)
     google-protobuf (3.25.2-x86_64-darwin)
     google-protobuf (3.25.2-x86_64-linux)
+    htmlbeautifier (1.4.3)
+    htmlcompressor (0.4.0)
     htmlentities (4.3.4)
     http_parser.rb (0.8.0)
     httparty (0.21.0)
@@ -54,6 +56,10 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
+    jekyll-tidy (0.2.2)
+      htmlbeautifier
+      htmlcompressor
+      jekyll
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jekyll-webring (0.3.3)
@@ -146,6 +152,7 @@ DEPENDENCIES
   jektex (~> 0.1.1)
   jekyll (~> 4.3.3)
   jekyll-feed (~> 0.12)
+  jekyll-tidy
   jekyll-webring
   json
   tzinfo (~> 1.2)
