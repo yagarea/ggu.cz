@@ -3,11 +3,13 @@ title: GGU
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ggu.cz" # the base hostname & protocol for your site, e.g. http://example.com
 email: your-email@example.com
+author: "GGU Colective"
 
 plugins:
   - jektex
   - jekyll-feed
   - jekyll-webring
+  - jekyll-tidy
 
 collections:
   - projects
@@ -49,3 +51,12 @@ exclude:
   - README.md
   - makefile
   - _data/webring.yml
+
+
+jekyll_tidy:
+  exclude:
+    - "**/*.scss"
+    - "**/*.xml"
+    - "*.xml"
+    - "**/*.sass"
+    - "**/*.lock"
