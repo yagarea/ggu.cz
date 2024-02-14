@@ -1,4 +1,5 @@
 ---
+title: News feed
 layout: default
 permalink: /feed/
 ---
