@@ -2,8 +2,8 @@
 	{% for member in site.members -%}
 		<div class="member block">
 			<div class="member-image">
-				<img class="member-profile-picture" src="{{ member.image }}"/>
-				{%- if member.logo -%}<img class="member-logo" src="{{ member.logo }}">{%- endif %}
+				<img class="member-profile-picture" src="{{ member.image }}" alt="{{- member.name -}}"/>
+				{%- if member.logo -%}<img class="member-logo" src="{{ member.logo }}" alt="{{- memner.name }} logo">{%- endif %}
 			</div>
 			<h3>{{- member.name -}}</h3>
 			<b>{{- member.school -}}</b>
