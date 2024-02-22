@@ -4,7 +4,7 @@ layout: default
 permalink: /projects/
 ---
 
-## Projects
+# Projects
 
 {: .centered-text}
 This is a list of projects made by the GGU members.
