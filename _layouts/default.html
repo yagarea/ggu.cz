@@ -2,8 +2,10 @@
 <html lang="en">
 	{%- include head.html -%}
 	<body class="theme-default">
-		{%- include logo.html %}
-		{%- include nav.html %}
+		<header>
+			{% include logo.html %}
+			{% include nav.html %}
+		</header>
 		<main class="content-centerer">
 			{{ content }}
 		</main>
