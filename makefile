@@ -1,8 +1,8 @@
 SHELL=/usr/bin/env sh
 
-.PHONY: run deploy build upload
+.PHONY: run
 
-run: build
+run:
 	bundle exec jekyll serve --trace
 
 deploy: build upload
@@ -18,5 +18,5 @@ install:
 
 upload: build
 	echo Start upload
-	rsync -varhIu -e "ssh -p 222" --progress --delete _site/ ggu.cz:/userdata/groups/uzu8/Web/Homepage
+	rsync -varhIu -e "ssh -p 222" --progress --delete _site/ ggu:/userdata/groups/uzu8/Web/Homepage
 
