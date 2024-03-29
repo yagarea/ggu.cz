@@ -1,24 +1,16 @@
-<div class="projects">
-{% for project in site.projects %}
-	<div class="project-card block">
-		<div class="project-card-content">
-			<h2>{{ project.name }}</h2>
-			<p>{{ project.content }}</p>
-		</div>
-		<div class="project-card-footer">
-			<hr/>
-			<p class="right-text">
-			<em>
-				By {{ project.author }}.
-				{% if project.repository %}
-					<a href="{{ project.repository }}">Repository</a>
-				{% endif %}
-				{% if project.website %}
-					<a href="{{ project.website }}">Website</a>
-				{% endif %}
-			</em>
-			</p>
-		</div>
+
+{%- assign projects_by_group = site.projects | group_by: "category" -%}
+{%- for category in page.category_order -%}
+	{%- assign current_category = projects_by_group | where_exp:"item","item.name == category" -%}
+	{%- if current_category.size > 0 -%}
+		<h2 class="project-category">{{- category -}}</h2>
+		<div class="projects">
+			{% for project in current_category[0].items %}
+				<details>
+					<summary><strong>{{- project.name -}}</strong> &ndash; {{- project.description -}} [{{- project.license -}}]</summary>
+					{{- project.content | markdownify -}}
+				</details>
+			{%- endfor -%}
+	{%- endif -%}
 	</div>
-{% endfor %}
-</div>
+{%- endfor -%}
