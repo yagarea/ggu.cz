@@ -2,6 +2,7 @@
 name: JrUtil
 repository: https://gitlab.com/dvdkon/jrutil
 author: David Koňařík
+category: Services
 ---
 
 A collection of software for reading and analysing Czech public transport data,

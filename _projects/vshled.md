@@ -3,6 +3,7 @@ name: VŠhled
 repository: https://gitlab.com/dvdkon/vshled
 website: https://vshled.ggu.cz/
 author: David Koňařík
+category: Software
 ---
 
 An Android app, Kotlin library and CLI tool for students of Charles University,

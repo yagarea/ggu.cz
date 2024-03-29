@@ -2,6 +2,7 @@
 name: SIDSS
 repository: https://gitlab.com/dvdkon/sidss/
 author: David Koňařík
+category: Software
 ---
 
 SImple Directory Service Server, an LDAP server made for handling

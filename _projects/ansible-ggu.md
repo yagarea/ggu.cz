@@ -2,6 +2,7 @@
 name: ansible-ggu
 repository: https://gitlab.com/dvdkon/ansible-ggu
 author: David Koňařík
+category: Other
 ---
 
 The Ansible scripts that configure this server. Uses
