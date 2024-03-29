@@ -40,15 +40,15 @@ body
 h1
   color: $text-highlight-color
   text-align: center
-  font-size: 2.5em
+  font-size: 2em
 
 h2
   color: $text-highlight-color
-  font-size: 2em
+  font-size: 1.75em
 
 h3
   color: $text-highlight-color
-  font-size: 1.5em
+  font-size: 1.35em
 
 a
   color: $text-highlight-color
@@ -75,14 +75,12 @@ footer
 
 main
   padding: 1em
-  width: 80%
   max-width: 800px
   margin: auto
 
 main > p
   width: 80%
   margin: 1em auto
-
 
 // CLASSES
 .content-centerer
@@ -170,6 +168,10 @@ main > p
     transform: translate(-50%, -50%)
 
 
+strong
+  color: $highlight-color
+  font-weight: bold
+
 //------------------------------------
 
 .split
@@ -187,7 +189,7 @@ main > p
 
 //-----------------------------------
 
-.members, .projects, .services
+.members
   margin-left: auto
   margin-right: auto
   display: flex
@@ -198,11 +200,47 @@ main > p
   li
     list-style: none
 
+
+.projects
+  margin-left: auto
+  margin-right: auto
+  max-width: 800px
+  background-color: $block-color
+
+  details:nth-child(odd)
+    background-color: $background-color-highlight
+
+  details
+    padding: 0
+    margin: 0
+
+    summary
+      font-size: 1.5em
+      cursor: pointer
+      margin: 0
+
+
+    ul
+      margin: 0.5em
+      padding: 0.5em
+
+    img
+      margin: auto
+      display: block
+      width: 75%
+
+    p
+      margin: 1em
+
+.project-category
+  max-width: 800px
+  margin: 1.5em auto 0.5em auto
+
 .member
   display: inline-block
   width: 40%
 
-  h3
+  h2
     margin: 0.5em 0 0 0
 
   ul
@@ -249,7 +287,7 @@ main > p
   display: inline-block
   border-radius: 15px
 
-  h3
+  h2
     margin: 0.3em 0
 
   img
