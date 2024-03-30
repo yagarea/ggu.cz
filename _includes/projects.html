@@ -7,7 +7,7 @@
 		<div class="projects">
 			{% for project in current_category[0].items %}
 				<details>
-					<summary><strong>{{- project.name -}}</strong> &ndash; {{- project.description -}} [{{- project.license -}}]</summary>
+					<summary><strong>{{- project.name -}}</strong> &ndash; {{ project.description }} [{{- project.license -}}]</summary>
 					{{- project.content | markdownify -}}
 				</details>
 			{%- endfor -%}
