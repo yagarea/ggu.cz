@@ -1,5 +1,6 @@
 ---
 name: "Confgit"
+description: "Tool for version management of config files."
 repository: https://github.com/yagarea/confgit
 author: Jan Černý
 license: GPLv3

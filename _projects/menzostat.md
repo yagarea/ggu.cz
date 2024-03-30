@@ -1,5 +1,6 @@
 ---
 name: "MenzoStat"
+license: AGPLv3
 link: menzostat.ggu.cz
 repo:
 category: Services
