@@ -205,10 +205,13 @@ strong
   margin-left: auto
   margin-right: auto
   max-width: 800px
-  background-color: $block-color
+  background-color: $background-color-highlight
 
-  details:nth-child(odd)
-    background-color: $background-color-highlight
+  details:nth-child(even)
+    background-color: $block-color
+    a:hover
+      background-color: $background-color-highlight
+
 
   details
     padding: 3px
@@ -218,6 +221,15 @@ strong
       cursor: pointer
       margin: 0
       padding: 3px
+      padding-left: 15px
+
+      &::marker
+        font-size: 1.2em // Match starting <strong> below
+
+      &::before
+        display: inline-block
+        content: ""
+        width: 5px // Make the arrow a better touch target
 
     strong
       font-size: 1.2em
@@ -233,6 +245,20 @@ strong
 
     p
       margin: 1em
+
+    dl
+        margin: 1em
+    dt, dd
+        display: inline
+    dd::after
+        display: block
+        content: ""
+
+    dt
+        font-weight: bold
+    dd
+        margin-left: 0
+        
 
 .project-category
   max-width: 800px

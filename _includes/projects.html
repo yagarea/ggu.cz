@@ -1,4 +1,3 @@
-
 {%- assign projects_by_group = site.projects | group_by: "category" -%}
 {%- for category in page.category_order -%}
 	{%- assign current_category = projects_by_group | where_exp:"item","item.name == category" -%}
@@ -8,9 +7,31 @@
 			{% for project in current_category[0].items %}
 				<details>
 					<summary>
-						<strong>{{- project.name -}}</strong> &ndash; {{ project.description }} {% if project.license -%}[{{- project.license -}}]{%- endif -%}
+						{% assign link = project.website | default:project.repository %}
+						{% if link %}<a href="{{ link }}">{% endif -%}
+						<strong>{{- project.name -}}</strong>
+						{%- if link %}</a>{% endif %}
+						{% if project.description %}
+							&ndash; {{ project.description }}
+						{% endif %}
+						{% if project.license %}
+							{% if project.repository %}<a href="{{ project.repository }}">{% endif -%}
+								[{{ project.license }}]
+							{%- if project.repository %}</a>{% endif %}
+						{% endif %}
 					</summary>
 					{{- project.content | markdownify -}}
+
+					<dl>
+						{% if project.website %}
+							<dt>Website:</dt>
+							<dd><a href="{{ project.website }}">{{ project.website }}</a></dd>
+						{% endif %}
+						{% if project.repository %}
+							<dt>Repository:</dt>
+							<dd><a href="{{ project.repository }}">{{ project.repository }}</a></dd>
+						{% endif %}
+					</dl>
 				</details>
 			{%- endfor -%}
 	{%- endif -%}
