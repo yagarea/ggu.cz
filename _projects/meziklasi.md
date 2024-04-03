@@ -1,6 +1,7 @@
 ---
 name: "Meziklasí"
 repository: https://github.com/xiaoxiae/meziklasi
+website: https://www.meziklasi.cz
 author: Jan Černý
 category: Art
 ---
