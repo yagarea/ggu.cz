@@ -3,6 +3,7 @@ name: "Lyricall"
 repository: https://github.com/yagarea/lyricall
 website: https://lyricall.cz
 license: AGPLv3
+description: "Poetry publishing platform"
 category: Art
 ---
 
