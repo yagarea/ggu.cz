@@ -25,11 +25,11 @@
 					<dl>
 						{% if project.website %}
 							<dt>Website:</dt>
-							<dd><a href="{{ project.website }}">{{ project.website }}</a></dd>
+							<dd><a href="{{ project.website }}">{{ project.website | replace_first: "https://", "" }}</a></dd>
 						{% endif %}
 						{% if project.repository %}
 							<dt>Repository:</dt>
-							<dd><a href="{{ project.repository }}">{{ project.repository }}</a></dd>
+							<dd><a href="{{ project.repository }}">{{ project.repository | replace_first: "https://", "" }}</a></dd>
 						{% endif %}
 					</dl>
 				</details>
