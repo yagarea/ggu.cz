@@ -1,8 +1,9 @@
 ---
-name: "Breviar-ics"
-link: breviar-ics.ggu.cz
-repo:
+name: "Breviář v ICS"
+website: https://breviar-ics.ggu.cz/
 category: Services
+description: Czech catholic liturgical calendar in ICS
 ---
 
-Breviář
+Generates an ICS liturgical calendar with data from
+[breviář.cz](https://breviar.cz/).

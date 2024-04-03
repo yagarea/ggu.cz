@@ -3,6 +3,7 @@ name: ansible-ggu
 repository: https://gitlab.com/dvdkon/ansible-ggu
 author: David Koňařík
 category: Other
+description: Infrastracture-as-code scripts for ggu.cz
 ---
 
 The Ansible scripts that configure this server. Uses

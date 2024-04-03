@@ -3,6 +3,8 @@ name: SIDSS
 repository: https://gitlab.com/dvdkon/sidss/
 author: David Koňařík
 category: Software
+description: Simple complex central authentication
+license: GPLv3
 ---
 
 SImple Directory Service Server, an LDAP server made for handling
