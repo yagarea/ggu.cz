@@ -4,6 +4,7 @@ repository: https://gitlab.com/dvdkon/jrutil
 author: David Koňařík
 category: Services
 description: Multitool for processing Czech public transport data
+license: AGPLv3
 ---
 
 A collection of software for reading and analysing Czech public transport data,
