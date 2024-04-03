@@ -1,9 +1,10 @@
 ---
 name: "Meziklasí"
-repository: https://github.com/xiaoxiae/meziklasi
+repository: https://github.com/Meziklassociation/meziklasi
 website: https://www.meziklasi.cz
-author: Jan Černý
+license: AGPLv3
 category: Art
 ---
 
-This is mainly a literary project, created mostly as a joke. It is a chronicle of the village of Meziklasí. You can visit it at <a href='https://www.meziklasi.cz'>https://www.meziklasi.cz</a>
+This is mainly a literary project which is a fictional chronicle of the village of Meziklasí.
+
