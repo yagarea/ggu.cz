@@ -2,6 +2,7 @@
 name: "David Koňařík"
 image: "/assets/img/dk/dk.jpg"
 school: "MFF UK"
+order: 0
 external-links:
   - { title: "website", link: "dvdkon.ggu.cz" }
   - { title: "github", link: "github.com/dvdkon" }

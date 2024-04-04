@@ -1,5 +1,6 @@
 <section class="members">
-	{% for member in site.members -%}
+	{% assign members = site.members | sort:"order" %}
+	{% for member in members -%}
 		<div class="member block">
 			<div class="member-image">
 				<img class="member-profile-picture" src="{{ member.image }}" alt="{{- member.name -}}"/>
