@@ -32,6 +32,7 @@ webring:
     - "https://blackblog.cz/feed.xml"
     - "https://slama.dev/feed.xml"
     - "https://dvdkon.ggu.cz/atom.xml"
+    - "https://grego.site/atom.xml"
   max_summary_length: 256
   num_items: 10
   no_item_at_date_behaviour: use_oldest
@@ -60,3 +61,4 @@ jekyll_tidy:
     - "*.xml"
     - "**/*.sass"
     - "**/*.lock"
+
