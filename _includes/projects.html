@@ -15,9 +15,13 @@
 							&ndash; {{ project.description }}
 						{% endif %}
 						{% if project.license %}
-							{% if project.repository %}<a href="{{ project.repository }}">{% endif -%}
+							{% if project.repository %}
+								<a href="{{ project.repository }}">[{{ project.license }}]</a>
+							{% elsif project.website %}
+								<a href="{{ project.website }}">[{{ project.license }}]</a>
+							{% else %}
 								[{{ project.license }}]
-							{%- if project.repository %}</a>{% endif %}
+							{% endif %}
 						{% endif %}
 					</summary>
 					{{- project.content | markdownify -}}
