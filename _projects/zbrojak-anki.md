@@ -1,6 +1,6 @@
 ---
 name: Zbroják Anki
-repository: https://zbrojak.ggu.cz/
+website: https://zbrojak.ggu.cz/
 license: "CC BY-NC-ND 4.0"
 author: Jan Černý
 category: Other
