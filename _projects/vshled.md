@@ -4,7 +4,7 @@ repository: https://gitlab.com/dvdkon/vshled
 website: https://vshled.ggu.cz/
 author: David Koňařík
 category: Software
-license: MPLv2
+license: "MPL 2.0"
 description: Android app for CUNI students
 ---
 

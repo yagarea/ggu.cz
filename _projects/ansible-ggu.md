@@ -1,6 +1,7 @@
 ---
 name: Ansible-ggu
 repository: https://gitlab.com/dvdkon/ansible-ggu
+license: "MPL 2.0"
 author: David Koňařík
 category: Other
 description: Infrastracture-as-code scripts for ggu.cz
