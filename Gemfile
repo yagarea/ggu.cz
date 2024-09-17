@@ -1,5 +1,7 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 4.3.3"
+
+gem "jekyll", "~> 4.3.4"
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jektex", "~> 0.1.1"
