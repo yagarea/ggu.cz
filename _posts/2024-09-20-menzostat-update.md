@@ -1,5 +1,5 @@
 ---
-title:  "Mezostat update"
+title:  "Menzostat update"
 author: "David"
 ---
 
