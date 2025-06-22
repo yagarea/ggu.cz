@@ -114,6 +114,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     loofah (2.24.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -203,6 +204,7 @@ DEPENDENCIES
   jekyll-tidy
   jekyll-webring
   json
+  logger
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
