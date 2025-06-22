@@ -1,12 +1,14 @@
 ---
 ---
 
+@use "sass:color"
+
 // Default colors
 // https://colorhunt.co/palette/222831393e46b55400eeeeee
 body
   --background-color: #222831
-  --background-color-hover: #{lighten(#222831, 10%)}
-  --background-color-highlight: #{darken(#222831, 10%)}
+  --background-color-hover: #{color.adjust(#222831, $lightness: 10%)}
+  --background-color-highlight: #{color.adjust(#222831, $lightness: -10%)}
   --block-color: #393E46
   --highlight-color: #B55400
   --text-color: #EEEEEE
@@ -15,8 +17,8 @@ body
 // https://www.csscolorpalettes.com/palettes/594
 body.theme-classic
   --background-color: #00204a
-  --background-color-hover: #{lighten(#00204a, 10%)}
-  --background-color-highlight: #{darken(#00204a, 10%)}
+  --background-color-hover: #{color.adjust(#00204a, $lightness: 10%)}
+  --background-color-highlight: #{color.adjust(#00204a, $lightness: -10%)}
   --block-color: #005792
   --highlight-color: #00BBf0
   --text-color: #FDB44B
