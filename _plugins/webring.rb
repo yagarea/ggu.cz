@@ -97,6 +97,7 @@ module JekyllWebring
 
 					feed << feed_item
 				end
+                feed.sort_by! { |item| item['_date'] }.reverse!
 				@feeds << feed
 			end
 		end
@@ -144,7 +145,7 @@ module Jekyll
 					feeds.each do |feed_items|
 						items << feed_items.sample
 					end
-				when Time, '', nil 
+				when Time, '', nil
 					date = param || Time.now
 					feeds.each do |feed_items|
 						item_to_add = nil
