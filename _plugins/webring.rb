@@ -5,7 +5,6 @@ require 'httparty'
 require 'sanitize'
 require 'yaml'
 require 'fileutils'
-require 'time'
 
 module JekyllWebring
 	TEMPLATE = <<~HTML
@@ -101,9 +100,8 @@ module JekyllWebring
 				@feeds << feed
 			end
 		end
-        # sort items by date
-        @feeds.sort { |item| item['_date'] }.reverse
-        @feeds
+
+		@feeds
 	end
 
 	@data = nil
