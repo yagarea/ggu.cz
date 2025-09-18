@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+# Source: https://github.com/syldexiahime/jekyll-webring
 
 require 'feedjira'
 require 'httparty'
