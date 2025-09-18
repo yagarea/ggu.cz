@@ -11,8 +11,8 @@ keywords: "Free software, Open source, FOSS, OSS, Libre software, Matfyz, Svobod
 plugins:
   - jektex
   - jekyll-feed
-  - jekyll-webring
   - jekyll-tidy
+  #- jekyll-webring
 
 collections:
   - projects
