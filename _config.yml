@@ -41,6 +41,14 @@ webring:
   no_item_at_date_behaviour: use_oldest
   date_format: "%-d %B, %Y"
 
+
+guests:
+  - name: "Andy Mikulová"
+    url: "https://andy.ggu.cz"
+  - name: "Olga Cinková"
+    url: "https://olga.ggu.cz"
+
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/

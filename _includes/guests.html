@@ -1,0 +1,14 @@
+
+<section class="max-width-800">
+	<div class="feed-post block">
+		<ul>
+			{% for guest in site.guests -%}
+				<li>
+					<strong>{{- guest.name -}}</strong> - <a href="{{- guest.url -}}">
+						{{- guest.url | replace: 'http://', '' | replace: 'https://', '' -}}
+					</a>
+				</li>
+			{%- endfor %}
+		</ul>
+	</div>
+</section>
