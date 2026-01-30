@@ -1,10 +1,10 @@
 <section class="members">
-	{% assign members = site.members | sort:"order" %}
+	{% assign members = site.members | sort:"order" -%}
 	{% for member in members -%}
 		<div class="member block">
 			<div class="member-image">
-				<img class="member-profile-picture" src="{{ member.image }}" alt="{{- member.name -}}"/>
-				{%- if member.logo -%}<img class="member-logo" src="{{ member.logo }}" alt="{{- memner.name }} logo">{%- endif %}
+				<img class="member-profile-picture" src="{{- member.image -}}" alt="{{- member.name -}}"/>
+				{%- if member.logo -%}<img class="member-logo" src="{{- member.logo -}}" alt="{{- memner.name }} logo">{%- endif %}
 			</div>
 			<h2>{{- member.name -}}</h2>
 			<strong>{{- member.school -}}</strong>
@@ -12,7 +12,16 @@
 			{{- member.content -}}
 			<ul>
 				{% for el in member.external-links -%}
-					<li><em>{{- el.title -}}: <a href="https://{{- el.link -}}/">{{- el.link -}}</a></em></li>
+					<li>
+						<em>{{- el.title -}}: <a href="https://{{- el.link -}}/">
+								{%- if el.name -%}
+									{{- el.name -}}
+								{%- else -%}
+									{{- el.link -}}
+								{%- endif -%}
+							</a>
+						</em>
+					</li>
 				{%- endfor %}
 			</ul>
 		</div>
