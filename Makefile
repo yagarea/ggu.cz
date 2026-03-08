@@ -24,3 +24,14 @@ update:
 	bundle update
 	bundle update --bundler
 	bundle install
+
+deep-clean:
+	echo Removing .vendor directory
+	rm -rf .vendor
+	echo Removing _site directory
+	rm -rf _site
+	echo Removing .sass-cache directory
+	rm -rf .sass-cache
+
+clean:
+	bundle exec jekyll clean --trace
