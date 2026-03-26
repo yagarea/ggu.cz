@@ -21,7 +21,7 @@ upload: build
 	rsync -varhIu -e "ssh -p 222" --progress --delete _site/ ggu:/userdata/groups/uzu8/Web/Homepage
 
 update:
-	bundle update
+	bundle update --all
 	bundle update --bundler
 	bundle install
 
