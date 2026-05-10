@@ -47,6 +47,8 @@ guests:
     url: "https://andy.ggu.cz"
   - name: "Olga Cinková"
     url: "https://olga.ggu.cz"
+  - name: "Tibor Malinský"
+    url: "https://tibor.ggu.cz"
 
 
 exclude:
