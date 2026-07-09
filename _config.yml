@@ -2,7 +2,6 @@ title: GGU
 #subtitle: "Great Geeks United"  # TODO: do something with this
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ggu.cz" # the base hostname & protocol for your site, e.g. http://example.com
-email: your-email@example.com
 author: "GGU Colective"
 description: "We're a group of friends with similar interests from a small flat in the middle of Prague."
 theme_color: "#222831"
@@ -11,6 +10,7 @@ keywords: "Free software, Open source, FOSS, OSS, Libre software, Matfyz, Svobod
 plugins:
   - jektex
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-tidy
   #- jekyll-webring
 
