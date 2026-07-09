@@ -4,6 +4,7 @@ gem "jekyll", "~> 4.4.1"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-sitemap", "~> 1.4"
   gem "jektex", "~> 0.1.1"
   gem "jekyll-tidy"
 end
