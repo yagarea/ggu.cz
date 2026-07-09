@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="feed-post">
-	<h3>{{ title }}</h3>
-	<p>{{ content }}</p>
+<article class="feed-post">
+	<h3>{{ page.title }}</h3>
+	<div>{{ content }}</div>
 	<div class="feed-author">
-		{{ author }}
+		{{ page.author }}
 		<br/>
-		<i>{{ post.date |  date: "%-d %B %Y" }}</i>
+		<i><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></i>
 	</div>
-</div>
+</article>
 <p>You can subscribe to <a href="/rss.xml">GGU news RSS</a>.</p>
