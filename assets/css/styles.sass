@@ -141,33 +141,28 @@ main > p
   padding: 0 1em
 
 .nav-button
+  font-size: 2em
   background-color: $background-color
-  height: 3em
-  width: 13em
+  height: 1.5em
+  width: 6.5em
   margin: auto 0
-  position: relative
-  border: 3px solid $background-color
   padding: 0
-  border-width: 1px
-  border-style: solid
-  border-color: $text-color
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $text-color
+  text-decoration: none !important
+  border: 1px solid $text-color
   border-radius: 5px
   box-shadow: 2px 4px 6px black
+  transition: background-color .15s ease
 
-  &:hover
+  &:hover, &:focus-visible
     background-color: $background-color-hover
-  
-  a
-    color: $text-color
-    text-decoration: none !important
-    font-size: 2em
-    margin: 0
-    position: absolute
-    width: 95%
-    top: 50%
-    left: 50%
-    -ms-transform: translate(-50%, -50%)
-    transform: translate(-50%, -50%)
+
+  &[aria-current="page"]
+    border-color: $highlight-color
+    color: $text-highlight-color
 
 
 strong
@@ -398,5 +393,5 @@ strong
     width: 100%
 
   .nav-button
-    font-size: 0.8em
+    font-size: 1.6em
 
