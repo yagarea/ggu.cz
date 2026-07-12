@@ -1,11 +1,22 @@
 <section class="feed">
-	<h3 class="centered-text">Latest posts from GGU members</h3>
-		{%- for item in webring reversed %}
-		<div class="feed-post block">
+	<h2 class="centered-text">Latest posts from GGU members</h2>
+	{%- for item in webring reversed %}
+		<article class="feed-post block">
 			<h3 class="title"><a href="{{ item.url }}" target="_blank" rel="noopener">{{- item.title -}}</a></h3>
-			<p class="summary">{{- item.summary -}}</p>
-			<small class="source">via <a href="{{- item.source_url -}}">{{- item.source_title -}}</a></small>
-			<small class="date">{{- item.date -}}</small>
-		</div>
-		{%- endfor %}
+			{%- assign summary = item.summary | strip -%}
+			{%- if summary != "" %}
+			<p class="summary">{{- summary -}}</p>
+			{%- elsif item.media %}
+				{%- if item.media.type == "image" %}
+			<img class="summary-media" src="{{ item.media.url }}" alt="{{ item.media.alt }}" loading="lazy"/>
+				{%- else %}
+			<video class="summary-media" src="{{ item.media.url }}" controls preload="metadata"></video>
+				{%- endif %}
+			{%- endif %}
+			<div class="card-meta">
+				<small class="source">via <a href="{{- item.source_url -}}">{{- item.source_title -}}</a></small>
+				<small class="date">{{- item.date -}}</small>
+			</div>
+		</article>
+	{%- endfor %}
 </section>

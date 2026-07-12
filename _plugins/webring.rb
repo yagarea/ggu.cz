@@ -3,7 +3,9 @@
 
 require 'feedjira'
 require 'httparty'
+require 'nokogiri'
 require 'sanitize'
+require 'uri'
 require 'yaml'
 require 'fileutils'
 
@@ -81,11 +83,38 @@ module JekyllWebring
 				end
 
 				raw_feed.entries.each do |item|
-					sanitized = Sanitize.fragment(
-						item.content || item.summary)
+					# Prefer the item description; fall back to an excerpt of
+					# its content. Some feeds ship empty tags, so check for
+					# blank strings rather than relying on nil.
+					raw_summary = [item.summary, item.content]
+						.map { |text| Sanitize.fragment(text.to_s).strip }
+						.find { |text| !text.empty? } || ''
+					sanitized = raw_summary.gsub(/\s+/, ' ')
 
 					summary = sanitized.length > config['max_summary_length'] ?
 						"#{ sanitized[0 ... config['max_summary_length']] }..." : sanitized
+
+					# When the item has no text at all, fall back to its first
+					# image or video so the card is not empty.
+					media = nil
+					if summary.empty?
+						fragment = Nokogiri::HTML.fragment(
+							"#{ item.summary } #{ item.content }")
+						element = fragment.at_css('img[src], video[src], video source[src]')
+
+						if element
+							begin
+								media = {
+									'type' => element.name == 'img' ? 'image' : 'video',
+									'url'  => URI.join(item.url, element['src']).to_s,
+									'alt'  => element['alt'] || item.title,
+								}
+							rescue URI::Error
+								Jekyll.logger.warn("Webring:",
+									"invalid media url in item #{ item.url }")
+							end
+						end
+					end
 
 					feed_item = {
 						'source_title' => raw_feed.title,
@@ -94,6 +123,7 @@ module JekyllWebring
 						'url'          => item.url,
 						'_date'        => item.published,
 						'summary'      => summary,
+						'media'        => media,
 					}
 
 					feed << feed_item
