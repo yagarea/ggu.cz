@@ -5,6 +5,7 @@
 			<div>{{- post.content -}}</div>
 			<div class="feed-author">
 				<em>{{- post.author -}}</em>, <em><time datetime="{{ post.date | date_to_xmlschema }}">{{- post.date | date: "%-d. %-m. %Y" -}}</time></em>
+				<a href="{{- post.url -}}">[share]</a>
 			</div>
 		</article>
 	{%- endfor %}
