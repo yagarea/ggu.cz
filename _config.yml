@@ -5,14 +5,13 @@ url: "https://ggu.cz" # the base hostname & protocol for your site, e.g. http://
 author: "GGU Colective"
 description: "We're a group of friends with similar interests from a small flat in the middle of Prague."
 theme_color: "#222831"
-keywords: "Free software, Open source, FOSS, OSS, Libre software, Matfyz, Svobodný software"
+keywords: "Free software, Open source, FOSS, OSS, Libre software, Matfyz, Svobodný software, Prague, Czechia"
 
 plugins:
   - jektex
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-tidy
-  #- jekyll-webring
 
 collections:
   - projects
@@ -49,6 +48,17 @@ guests:
     url: "https://olga.ggu.cz"
   - name: "Tibor Malinský"
     url: "https://tibor.ggu.cz"
+
+befriended_webrings:
+  - name: "UCW"
+    description: "United computer wizards"
+    url: "https://ucw.cz"
+  - name: "09de"
+    description: "SUS department"
+    url: "https://0d9e.tech"
+  - name: "GLY"
+    description: "Geeks like you"
+    url: "https://gly.cz"
 
 
 exclude:

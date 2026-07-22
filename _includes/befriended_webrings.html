@@ -1,0 +1,15 @@
+<section class="max-width-800">
+	<div class="feed-post block">
+		<ul>
+			{% for webring in site.befriended_webrings -%}
+				<li>
+					<strong>{{- webring.name -}}</strong>
+					&ndash; {{ webring.description }}
+					&ndash; <a href="{{- webring.url -}}">
+						{{- webring.url | replace: 'http://', '' | replace: 'https://', '' -}}
+					</a>
+				</li>
+			{%- endfor %}
+		</ul>
+	</div>
+</section>
