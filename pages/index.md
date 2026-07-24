@@ -21,6 +21,6 @@ We're a group of friends with similar interests from a small flat in the middle 
 {% include guests.html %}
 
 {: .centered-text}
-## Befrinded webrings
+## Befriended webrings
 
 {% include befriended_webrings.html %}
