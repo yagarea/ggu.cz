@@ -1,0 +1,115 @@
+@use "theme" as *
+
+// The band at the top of every page. It carries either the site wordmark
+// (`.logo` on its own, plus the navigation) or a page title (`.logo-page-title`,
+// on the pages that stand on their own). The only thing the two differ in is the
+// size of the title, so that is the one value the modifier changes.
+
+.site-header
+  margin-bottom: clamp(1.5em, 5vw, 3em)
+  padding: clamp(2em, 7vw, 4em) 1em clamp(1.5em, 4vw, 2.5em)
+  background-color: $background-color-highlight
+  border-bottom: 2px solid $highlight-color
+  text-align: center
+
+.nav
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 10px
+  margin-top: clamp(1em, 3vw, 1.5em)
+
+.nav-button
+  display: flex
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  width: 6.5em
+  min-height: 1.5em
+  padding: 0
+  background-color: $background-color
+  border: 1px solid $text-color
+  border-radius: 5px
+  box-shadow: 2px 4px 6px black
+  color: $text-color
+  font-size: 2em
+  text-decoration: none
+  transition: background-color 0.15s ease
+
+  &:hover, &:focus-visible
+    background-color: $background-color-hover
+
+  &[aria-current="page"]
+    border-color: $highlight-color
+    color: $text-highlight-color
+
+  // Four buttons of a fixed width stop fitting on one row below ~900px, so from
+  // there on they are sized by their label; on a phone the row wraps instead of
+  // overflowing the band.
+  @media screen and (max-width: 900px)
+    width: auto
+    padding: 0 0.8em
+    font-size: 1.6em
+
+  // Once the row has to break, break it evenly: two by two beats three plus a
+  // stray one. `gap` is 10px, so half of it comes off each button.
+  @media screen and (max-width: 620px)
+    width: calc(50% - 5px)
+    font-size: 1.4em
+
+.logo
+  --title-size: clamp(4rem, 22vw, 10rem)
+  max-width: 34em
+  margin: 0 auto
+  color: $text-color
+
+  a
+    padding: 0
+    text-decoration: none
+
+    &:hover, &:focus-visible
+      background-color: transparent
+
+// A page title is a sentence rather than a wordmark: it has to wrap, so it
+// cannot be set at wordmark size.
+.logo-page-title
+  --title-size: clamp(1.9rem, 5.5vw, 3.4rem)
+
+.title-big, .title-small
+  display: inline-block
+  color: $highlight-color
+  line-height: 1.05
+  // Scales with the title, so both sizes keep the same drop shadow.
+  text-shadow: 0.06em 0.04em 0 $shadow-color
+
+.title-big
+  margin: 0
+  font-size: var(--title-size)
+  text-wrap: balance
+
+.title-small
+  margin: 0 0 0 -0.4em
+  font-size: calc(var(--title-size) * 0.3)
+
+.subtitle
+  margin: 0.8em 0 0
+  color: $muted-text-color
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem)
+  letter-spacing: 0.14em
+  text-transform: uppercase
+
+//------------------------------------ paper
+
+@media print
+  .site-header
+    margin-bottom: 1em
+    padding: 0 0 1em
+    background-color: transparent
+    border-bottom: 2px solid #000
+
+    .nav
+      display: none
+
+  .title-big, .title-small, .subtitle
+    color: #000
+    text-shadow: none

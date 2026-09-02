@@ -2,6 +2,7 @@
 ---
 
 @use "theme" as *
+@use "header"
 @use "display-page"
 @use "gallery"
 
@@ -63,35 +64,6 @@ main > p
   margin: auto
   padding-bottom: 2em
 
-.logo
-  margin: 2em auto
-  margin-bottom: 0px
-  display: inline-block
-  width: 100%
-  text-align: center
-  color: $text-color
-
-  a
-    text-decoration: none
-
-    &:hover
-      background-color: $background-color
-
-.title-big
-  font-size: 10em
-  display: inline-block
-  color: $highlight-color
-  text-shadow: 10px 5px black
-
-.title-small
-  font-size: 3em
-  display: inline-block
-  color: $highlight-color
-  text-shadow: 10px 5px black
-  margin-left: -20px
-  margin-top: 0
-
-
 .block
   background-color: $block-color
   padding: 1em
@@ -100,43 +72,6 @@ main > p
   box-shadow: 2px 2px 4px black
 
 //-----------------------------------
-
-.nav
-  height: 4em
-  background-color: $block-color
-  left: 50%
-  text-align: center
-  display: flex
-  justify-content: center
-  gap: 10px
-  flex-direction: row
-  height: 5em
-  padding: 0 1em
-
-.nav-button
-  font-size: 2em
-  background-color: $background-color
-  height: 1.5em
-  width: 6.5em
-  margin: auto 0
-  padding: 0
-  display: flex
-  align-items: center
-  justify-content: center
-  color: $text-color
-  text-decoration: none !important
-  border: 1px solid $text-color
-  border-radius: 5px
-  box-shadow: 2px 4px 6px black
-  transition: background-color .15s ease
-
-  &:hover, &:focus-visible
-    background-color: $background-color-hover
-
-  &[aria-current="page"]
-    border-color: $highlight-color
-    color: $text-highlight-color
-
 
 strong
   color: $highlight-color
@@ -420,7 +355,4 @@ strong
 @media screen and (max-width: 850px)
   .project-card, .member
     width: 100%
-
-  .nav-button
-    font-size: 1.6em
 
