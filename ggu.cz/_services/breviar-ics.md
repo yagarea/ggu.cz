@@ -1,7 +1,7 @@
 ---
 name: "Breviář v ICS"
 website: https://breviar-ics.ggu.cz/
-category: Services
+category: Our projects
 description: Czech catholic liturgical calendar in ICS
 ---
 
