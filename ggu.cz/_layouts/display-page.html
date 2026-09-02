@@ -1,17 +1,18 @@
 <!doctype html>
-<html lang="cs">
+<html lang="{{ page.lang | default: 'en' }}">
 	{%- include head.html -%}
-	<body class="theme-default">
-		<header>
+	<body class="theme-default display-page{% if page.body_class %} {{ page.body_class }}{% endif %}">
+		<a class="skip-link" href="#content">Skip to content</a>
+		<header class="display-page-header">
 			<div class="display-page-logo">
-				<div class="title-big">{{- page.title -}}</div>
-				{% if page.subtitle -%}<div class="subtitle">{{- page.subtitle -}}</div>{%- endif %}
+				<h1 class="title-big">{{- page.title -}}</h1>
+				{% if page.subtitle -%}<p class="subtitle">{{- page.subtitle -}}</p>{%- endif %}
 			</div>
 		</header>
-		<main class="content-centerer">
-			<div class="feed-post" markdown=1>
+		<main id="content" class="content-centerer">
+			<article class="display-page-body">
 				{{ content }}
-			</div>
+			</article>
 		</main>
 		<footer class="centered-text">
 			<small>&copy; {{ site.time | date: '%Y' }} <a href="https://ggu.cz/">GGU.cz</a></small>
