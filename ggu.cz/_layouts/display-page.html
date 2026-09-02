@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="cs">
+	{%- include head.html -%}
+	<body class="theme-default">
+		<header>
+			<div class="display-page-logo">
+				<div class="title-big">{{- page.title -}}</div>
+				{% if page.subtitle -%}<div class="subtitle">{{- page.subtitle -}}</div>{%- endif %}
+			</div>
+		</header>
+		<main class="content-centerer">
+			<div class="feed-post" markdown=1>
+				{{ content }}
+			</div>
+		</main>
+		<footer class="centered-text">
+			<small>&copy; {{ site.time | date: '%Y' }} <a href="https://ggu.cz/">GGU.cz</a></small>
+		</footer>
+	</body>
+</html>
