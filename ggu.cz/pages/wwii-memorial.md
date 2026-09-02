@@ -7,7 +7,7 @@ lang: en
 body_class: page-wwii-memorial
 
 galleries:
-  printing:
+  printing-process:
     - src: /assets/img/wwii-memorial/znak-b-1.jpg
       alt: First layers of a coat of arms being printed on a 3D printer
       caption: The first layers going down on the print bed.
@@ -17,6 +17,7 @@ galleries:
     - src: /assets/img/wwii-memorial/znak-b-3.jpg
       alt: Close-up of the half finished relief of the coat of arms on the print bed
       caption: The ornament roughly half way through.
+  printing-finished:
     - src: /assets/img/wwii-memorial/znak-b-4.jpg
       alt: Finished 3D print of a shield shaped coat of arms with towers and a gate
       caption: The finished shield, still on the bed.
@@ -99,7 +100,8 @@ Licence
 
 ### Printing
 
-{% include gallery.html id="printing" photos=page.galleries.printing %}
+{% include gallery.html id="printing" photos=page.galleries.printing-process %}
+{% include gallery.html id="printing" photos=page.galleries.printing-finished %}
 
 ### Manufacturing
 
