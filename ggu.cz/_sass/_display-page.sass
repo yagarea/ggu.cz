@@ -1,0 +1,238 @@
+@use "theme" as *
+
+// Chrome for the `display-page` layout: a stand-alone page that carries its own
+// title header instead of the shared logo + navigation, and holds all of its
+// content in a single article card.
+
+.skip-link
+  position: absolute
+  top: 0
+  left: -9999px
+  z-index: 30
+  padding: 0.6em 1em
+  background-color: $block-color
+  color: $text-highlight-color
+
+  &:focus
+    top: 0.5em
+    left: 0.5em
+
+body.display-page
+  main
+    max-width: 62em
+    padding: 0 1em 2em
+
+  footer
+    height: auto
+    padding: 1.2em 0
+    border-top: 1px solid $hairline-color
+
+//------------------------------------ header
+
+.display-page-header
+  margin-bottom: clamp(1.5em, 5vw, 3em)
+  padding: clamp(2em, 7vw, 4em) 1em clamp(1.5em, 4vw, 2.5em)
+  background-color: $background-color-highlight
+  border-bottom: 2px solid $highlight-color
+  text-align: center
+
+.display-page-logo
+  max-width: 34em
+  margin: 0 auto
+
+  .title-big
+    display: block
+    margin: 0
+    font-size: clamp(1.9rem, 5.5vw, 3.4rem)
+    line-height: 1.05
+    text-wrap: balance
+    text-shadow: 4px 3px 0 $shadow-color
+
+  .subtitle
+    margin: 0.8em 0 0
+    color: $muted-text-color
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem)
+    letter-spacing: 0.14em
+    text-transform: uppercase
+
+//------------------------------------ article
+
+.display-page-body
+  --pad: clamp(1.2em, 4vw, 2.5em)
+  max-width: 48em
+  margin: 0 auto
+  padding: var(--pad)
+  background-color: $block-color
+  border-radius: 8px
+  box-shadow: 0 2px 12px $shadow-color
+  line-height: 1.65
+  overflow-wrap: break-word
+
+  > :first-child
+    margin-top: 0
+
+  > :last-child
+    margin-bottom: 0
+
+  h2
+    margin: 2.2em 0 0.6em
+    padding-bottom: 0.25em
+    border-bottom: 2px solid $highlight-color
+    scroll-margin-top: 0.5em
+
+  h3
+    margin: 1.8em 0 0.5em
+    scroll-margin-top: 0.5em
+
+  p, ul, ol, dl
+    margin: 0.9em 0
+
+  ul, ol
+    padding-left: 1.4em
+
+  li
+    margin: 0.35em 0
+
+  img
+    display: block
+    max-width: 100%
+    height: auto
+    margin: 1.5em auto
+    border-radius: 5px
+
+  figure
+    margin: 1.5em 0
+
+  hr
+    margin: 2.5em 0
+    border: 0
+    border-top: 1px solid $hairline-color
+
+  blockquote
+    margin: 1.5em 0
+    padding: 0.6em 1.2em
+    background-color: $background-color-highlight
+    border-left: 3px solid $highlight-color
+    border-radius: 0 5px 5px 0
+
+  pre
+    overflow-x: auto
+    padding: 1em
+    background-color: $background-color-highlight
+    border-radius: 5px
+
+  table
+    width: 100%
+    margin: 1.2em 0
+    border-collapse: collapse
+
+  th, td
+    padding: 0.4em 0.6em
+    border-bottom: 1px solid $hairline-color
+    text-align: left
+
+//------------------------------------ content blocks
+
+.lead
+  font-size: 1.2em
+  line-height: 1.55
+  color: $text-color
+
+// Key/value facts, e.g. materials and dimensions.
+.spec-list
+  display: grid
+  grid-template-columns: max-content 1fr
+  gap: 0.45em 1.2em
+  margin: 1.2em 0
+
+  dt
+    margin: 0
+    color: $text-highlight-color
+    font-weight: bold
+
+  dd
+    margin: 0
+
+// A link to a physical place, printed as a card.
+.place-card
+  display: flex
+  align-items: center
+  gap: 1em
+  margin: 1.5em 0
+  padding: 1em
+  background-color: $background-color-highlight
+  border: 1px solid $hairline-color
+  border-left: 3px solid $highlight-color
+  border-radius: 5px
+
+  .place-card-icon
+    flex: none
+    font-size: 2em
+    line-height: 1
+
+  p
+    margin: 0
+
+  .place-card-note
+    display: block
+    color: $muted-text-color
+    font-size: 0.9em
+
+// Editorial placeholder: visible while the page is still a draft.
+.todo
+  margin: 1.2em 0
+  padding: 0.8em 1em
+  background-color: $background-color-highlight
+  border: 1px dashed $text-highlight-color
+  border-radius: 5px
+  color: $muted-text-color
+  font-style: italic
+
+  &::before
+    content: "TODO — "
+    color: $text-highlight-color
+    font-style: normal
+    font-weight: bold
+    letter-spacing: 0.08em
+
+//------------------------------------ narrow screens
+
+@media screen and (max-width: 600px)
+  .spec-list
+    grid-template-columns: 1fr
+
+    dd
+      margin-bottom: 0.7em
+
+//------------------------------------ paper
+
+@media print
+  body.display-page
+    background-color: #fff
+    color: #000
+
+  .display-page-header
+    padding: 0 0 1em
+    background-color: transparent
+    border-bottom: 2px solid #000
+
+  .display-page-logo .title-big
+    color: #000
+    text-shadow: none
+
+  .display-page-logo .subtitle
+    color: #000
+
+  .display-page-body
+    max-width: none
+    padding: 0
+    background-color: transparent
+    box-shadow: none
+
+  .display-page-body h2,
+  .display-page-body h3
+    color: #000
+
+  .skip-link,
+  .todo
+    display: none

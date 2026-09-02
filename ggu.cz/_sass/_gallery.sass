@@ -1,0 +1,191 @@
+@use "theme" as *
+
+// Photo grid + a lightbox built purely out of `:target`, so the page keeps
+// working with JavaScript switched off. Full resolution images live in the
+// lightboxes; because those are `display: none` until targeted, a lazy <img>
+// inside them is never fetched unless the reader actually opens the photo.
+
+.gallery
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr))
+  gap: 0.9em
+  margin: 1.4em 0
+  padding: 0
+  list-style: none
+
+.gallery-item
+  display: flex
+  flex-direction: column
+  margin: 0
+
+.gallery-thumb
+  display: block
+  overflow: hidden
+  padding: 0
+  background-color: $background-color-highlight
+  border: 1px solid $hairline-color
+  border-radius: 5px
+  transition: border-color 0.15s ease, box-shadow 0.15s ease
+
+  img
+    display: block
+    width: 100%
+    aspect-ratio: 4 / 3
+    object-fit: cover
+    margin: 0
+    border-radius: 0
+    transition: transform 0.3s ease
+
+  &:hover, &:focus-visible
+    background-color: $background-color-highlight
+    border-color: $highlight-color
+    box-shadow: 0 4px 14px $shadow-color
+
+    img
+      transform: scale(1.05)
+
+  &:focus-visible
+    outline: 2px solid $text-highlight-color
+    outline-offset: 2px
+
+.gallery-item figcaption
+  margin-top: 0.5em
+  color: $muted-text-color
+  font-size: 0.9em
+  line-height: 1.4
+  text-align: center
+
+//------------------------------------ lightbox
+
+.lightbox
+  display: none
+
+  &:target
+    display: grid
+    position: fixed
+    inset: 0
+    z-index: 40
+    place-items: center
+    gap: 0.8em
+    padding: clamp(0.6em, 3vw, 2em)
+    background-color: $overlay-color
+
+// Covers the whole overlay: clicking anywhere outside the photo closes it.
+.lightbox-backdrop
+  position: absolute
+  inset: 0
+  padding: 0
+  border-radius: 0
+  cursor: zoom-out
+
+  &:hover
+    background-color: transparent
+
+.lightbox-figure
+  position: relative
+  z-index: 1
+  display: flex
+  flex-direction: column
+  gap: 0.6em
+  max-width: min(100%, 70em)
+  margin: 0
+
+  img
+    max-width: 100%
+    max-height: 72vh
+    margin: 0
+    object-fit: contain
+    border-radius: 4px
+    box-shadow: 0 6px 24px #000
+
+  figcaption
+    color: $muted-text-color
+    font-size: 0.95em
+    line-height: 1.4
+    text-align: center
+
+.lightbox-controls
+  position: relative
+  z-index: 1
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 0.6em
+
+.lightbox-counter
+  min-width: 4em
+  color: $muted-text-color
+  font-size: 0.9em
+  font-variant-numeric: tabular-nums
+  text-align: center
+
+.lightbox-button
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  min-width: 2.4em
+  min-height: 2.4em
+  padding: 0 0.7em
+  background-color: $block-color
+  border: 1px solid $hairline-color
+  border-radius: 5px
+  color: $text-color
+  text-decoration: none
+  transition: background-color 0.15s ease, border-color 0.15s ease
+
+  &:hover, &:focus-visible
+    background-color: $background-color-hover
+    border-color: $highlight-color
+    color: $text-highlight-color
+
+  &:focus-visible
+    outline: 2px solid $text-highlight-color
+    outline-offset: 2px
+
+.lightbox-close
+  position: absolute
+  top: clamp(0.6em, 3vw, 1.5em)
+  right: clamp(0.6em, 3vw, 1.5em)
+  z-index: 2
+  font-size: 1.4em
+  line-height: 1
+
+//------------------------------------ narrow screens
+
+@media screen and (max-width: 600px)
+  .gallery
+    grid-template-columns: repeat(2, 1fr)
+    gap: 0.6em
+
+  .gallery-item figcaption
+    font-size: 0.82em
+
+//------------------------------------ preferences
+
+@media (prefers-reduced-motion: reduce)
+  .gallery-thumb,
+  .gallery-thumb img,
+  .lightbox-button
+    transition: none
+
+  .gallery-thumb:hover img,
+  .gallery-thumb:focus-visible img
+    transform: none
+
+//------------------------------------ paper
+
+@media print
+  .gallery
+    grid-template-columns: repeat(2, 1fr)
+
+  .gallery-thumb
+    border-color: #999
+
+    img
+      aspect-ratio: auto
+
+  .gallery-item figcaption
+    color: #000
+
+  .lightbox
+    display: none !important
