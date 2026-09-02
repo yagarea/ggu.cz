@@ -1,0 +1,45 @@
+{%- comment -%}
+	Photo grid with a JavaScript-free lightbox.
+
+	Usage: {% include gallery.html id="printing" photos=page.galleries.printing %}
+
+	Every photo is a hash with `src`, `alt` and an optional `caption`.
+	Thumbnails link to a `:target` overlay holding the full resolution image;
+	those images stay unfetched until the overlay is opened.
+{%- endcomment -%}
+{%- assign gallery_id = include.id | default: "gallery" -%}
+{%- assign photos = include.photos -%}
+<div class="gallery" id="{{ gallery_id }}">
+	{%- for photo in photos -%}
+	{%- assign photo_id = gallery_id | append: "-" | append: forloop.index -%}
+	<figure class="gallery-item">
+		<a class="gallery-thumb" href="#{{ photo_id }}" aria-label="Open photo {{ forloop.index }} of {{ forloop.length }}: {{ photo.alt | escape }}">
+			<img src="{{ photo.src }}" alt="{{ photo.alt | escape }}" loading="lazy" decoding="async">
+		</a>
+		{%- if photo.caption %}
+		<figcaption>{{ photo.caption }}</figcaption>
+		{%- endif %}
+	</figure>
+	{%- endfor -%}
+</div>
+
+{%- for photo in photos -%}
+{%- assign photo_id = gallery_id | append: "-" | append: forloop.index -%}
+{%- if forloop.first -%}{%- assign prev_number = forloop.length -%}{%- else -%}{%- assign prev_number = forloop.index | minus: 1 -%}{%- endif -%}
+{%- if forloop.last -%}{%- assign next_number = 1 -%}{%- else -%}{%- assign next_number = forloop.index | plus: 1 -%}{%- endif -%}
+<div class="lightbox" id="{{ photo_id }}" tabindex="-1">
+	<a class="lightbox-backdrop" href="#{{ gallery_id }}" aria-label="Close photo"></a>
+	<a class="lightbox-button lightbox-close" href="#{{ gallery_id }}" aria-label="Close photo">&times;</a>
+	<figure class="lightbox-figure">
+		<img src="{{ photo.src }}" alt="{{ photo.alt | escape }}" loading="lazy" decoding="async">
+		{%- if photo.caption %}
+		<figcaption>{{ photo.caption }}</figcaption>
+		{%- endif %}
+	</figure>
+	<div class="lightbox-controls">
+		<a class="lightbox-button" href="#{{ gallery_id }}-{{ prev_number }}" aria-label="Previous photo" rel="prev">&#8249;</a>
+		<span class="lightbox-counter">{{ forloop.index }}&nbsp;/&nbsp;{{ forloop.length }}</span>
+		<a class="lightbox-button" href="#{{ gallery_id }}-{{ next_number }}" aria-label="Next photo" rel="next">&#8250;</a>
+	</div>
+</div>
+{%- endfor -%}
