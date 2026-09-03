@@ -78,22 +78,16 @@ panels were then cut and finished in a workshop.
 {: .todo}
 
 Materials
-: TODO
+: TODO: add materials
 
 Dimensions
-: TODO
-
-Emblem
-: TODO — modelled in ?, printed on a Creality 3D printer
-
-Lettering
-: TODO — cut through the sheet
+: TODO: Add dimensions
 
 Made in
-: TODO
+: TODO: popsat stroj
 
 Licence
-: TODO — the source files and photos are meant to be reusable, say under which licence
+: TODO: pod jakou licencí je to zveřejněné?
 {: .spec-list}
 
 ## Photos

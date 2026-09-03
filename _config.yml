@@ -1,5 +1,5 @@
 title: GGU
-#subtitle: "Great Geeks United"  # TODO: do something with this
+subtitle: "Great Geeks United"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ggu.cz" # the base hostname & protocol for your site, e.g. http://example.com
 author: "GGU Colective"

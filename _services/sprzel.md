@@ -1,10 +1,10 @@
 ---
 name: "Spržel"
-license: ???
+license: "TODO: Add license"
 website: https://sprzel.cz
-repository: ???
+repository: "TODO: Má vůbec spržel repo?"
 category: Our projects
-description: Spržel lol
+description: "TODO: description"
 ---
 
-TODO
+TODO: description

@@ -7,4 +7,4 @@ category: Other
 description: Public instance of XMR and P2Pool nodes
 ---
 
-TODO
+TODO: description
