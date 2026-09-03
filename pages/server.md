@@ -4,7 +4,9 @@ permalink: /server/
 ---
 
 ### Přístup k souborům
-TODO: sshfs
+
+Na `ggu.cz` na portu 222 běží SSH server, který poskytuje přístup k centrálnímu
+úložišti uživatelských souborů přes SFTP a rsync.
 
 
 ### Media

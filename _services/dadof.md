@@ -1,11 +1,12 @@
 ---
-name: "DADOF"
-license: MIT
+name: "Dadof"
 website: https://dadof.ggu.cz/
-repository: https://github.com/flarum/flarum
 category: Other
-description: "A forum dedicated to discussions about public transportation data."
+description: "A forum for discussing public transportation data."
 ---
 
-TODO: description
-powered by [flarum](https://flarum.org/).
+Dadof is a Czech-language forum dedicated to discussing Czech public transport
+data and software from the perspective of users of open data and developers of
+FLOSS software using that data.
+
+Powered by [flarum](https://flarum.org/).
