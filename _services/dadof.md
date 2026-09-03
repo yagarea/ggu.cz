@@ -1,10 +1,11 @@
 ---
 name: "DADOF"
-license: "TODO: Licence softwaru toho fóra"
+license: MIT
 website: https://dadof.ggu.cz/
-repository: "TODO: ????"
+repository: https://github.com/flarum/flarum
 category: Other
 description: "A forum dedicated to discussions about public transportation data."
 ---
 
 TODO: description
+powered by [flarum](https://flarum.org/).
