@@ -10,6 +10,5 @@ external-links:
 tags: [jan, Jan, honza, Honza, JC, yagarea]
 ---
 
-I love Informatics, Mathematics, Science, music with distorted guitars and a cup of 
-good tea.
+I like Computer science, music with distorted guitars and a cup of good tea.
 
