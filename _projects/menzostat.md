@@ -3,7 +3,7 @@ name: "Menzostat"
 license: AGPLv3
 website: https://menzostat.ggu.cz
 repository: https://gitlab.com/dvdkon/menzostat
-category: Services
+category: Software
 description: CUNI canteen data collector and viewer
 ---
 

@@ -3,7 +3,7 @@ name: "Matfyz Wiki"
 repository: https://gitlab.mff.cuni.cz/matfyzak/wiki
 website: "https://wiki.matfyz.cz/"
 author: "Jan Černý, David Koňařík"
-category: Services
+category: Software
 description: Community wiki for MFF CUNI
 license: GPLv2
 ---

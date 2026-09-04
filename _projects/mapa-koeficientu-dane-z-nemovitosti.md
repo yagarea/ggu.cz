@@ -3,7 +3,7 @@ name: Mapa koeficientů daně z nemovitostí
 repository: https://codeberg.org/dvdkon/mapakdn
 license: GPLv3
 author: David Koňařík
-category: Services
+category: Software
 description: Map of Czech property tax coefficients
 website: https://mapakdn.ggu.cz/
 ---
