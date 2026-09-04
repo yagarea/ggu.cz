@@ -3,8 +3,9 @@ name: "P2Pool Node"
 license: GPLv3
 website: https://ggu.cz/xmr/
 repository: https://github.com/SChernykh/p2pool
-category: Other
-description: Public instance of XMR and P2Pool nodes
+category: We also host
+description: Public instance of P2Pool node
 ---
 
-TODO: description
+Decentralized permissionless monero mining pool node.
+

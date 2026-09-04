@@ -1,7 +1,7 @@
 ---
 name: "Dadof"
 website: https://dadof.ggu.cz/
-category: Other
+category: We also host
 description: "A forum for discussing public transportation data."
 ---
 
