@@ -2,7 +2,7 @@
 title: VŠHLED
 subtitle: "App for Charles University students"
 layout: display-page
-permalink: /vshled
+permalink: /vshled/
 lang: en
 body_class: page-wwii-memorial
 ---

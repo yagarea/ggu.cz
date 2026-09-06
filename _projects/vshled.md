@@ -1,7 +1,7 @@
 ---
 name: VŠhled
 repository: https://gitlab.com/dvdkon/vshled
-website: https://vshled.ggu.cz/
+website: https://ggu.cz/vshled/
 author: David Koňařík
 category: Archived
 license: "MPL 2.0"
