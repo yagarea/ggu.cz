@@ -4,7 +4,6 @@ subtitle: "App for Charles University students"
 layout: display-page
 permalink: /vshled/
 lang: en
-body_class: page-wwii-memorial
 ---
 
 *TODO: This is all very WIP*

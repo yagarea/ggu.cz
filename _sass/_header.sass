@@ -75,6 +75,11 @@
 .logo-page-title
   --title-size: clamp(1.9rem, 5.5vw, 3.4rem)
 
+// The wordmark and the mark beside it are one unit: they never break across
+// lines, whatever the width of the block around them.
+.wordmark
+  white-space: nowrap
+
 .title-big, .title-small
   display: inline-block
   color: $highlight-color
@@ -90,6 +95,15 @@
 .title-small
   margin: 0 0 0 -0.4em
   font-size: calc(var(--title-size) * 0.3)
+
+// The mark sits on the wordmark's baseline and reaches the cap height of the
+// big title (DejaVu Sans capitals are 0.73em tall), so it lines up with the
+// letters instead of overshooting them.
+.logo-mark
+  height: calc(var(--title-size) * 0.73)
+  width: auto
+  margin-left: calc(var(--title-size) * 0.15)
+  vertical-align: baseline
 
 .subtitle
   margin: 0.8em 0 0
@@ -113,3 +127,6 @@
   .title-big, .title-small, .subtitle
     color: #000
     text-shadow: none
+
+  .logo-mark
+    filter: brightness(0)

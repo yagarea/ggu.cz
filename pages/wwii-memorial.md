@@ -4,7 +4,6 @@ subtitle: Creative common cultural heritage
 layout: display-page
 permalink: /wwii-memorial
 lang: en
-body_class: page-wwii-memorial
 
 galleries:
   printing-process:
