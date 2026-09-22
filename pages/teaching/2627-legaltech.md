@@ -28,9 +28,9 @@ lang: cs
 ## Probraná látka
 Zde bude postupně přibývat probraná látka.
 
-| Datum | Obsah                                                            | Poznámky |
-|-------|------------------------------------------------------------------|----------|
-| 29.9. | Úvod, organizace předmětu, motivace, teoretický úvod do výpočetní technologie, filosofie programovacích jazyků, setup potřebného softwaru | - |
+| Datum | Obsah                                                            | Slidy | Poznámky |
+|-------|------------------------------------------------------------------|-------|----------|
+| 29.9. | Úvod, organizace předmětu, motivace, teoretický úvod do výpočetní technologie, filosofie programovacích jazyků, setup potřebného softwaru | [prednaska1](https://jc.ggu.cz/lt/1.html) | - |
 
 ## Pravidla
 1. "Don't be a dick" - vysvětlit
