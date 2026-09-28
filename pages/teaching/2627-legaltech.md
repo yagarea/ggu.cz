@@ -70,6 +70,7 @@ Pro úspěšné dokončení předmětu student musí:
   - [KSP Encyklopedie](https://ksp.mff.cuni.cz/encyklopedie/)
   - [Ponořme se do Python(u) 3](https://knihy.nic.cz/cs/detail/3/)
 - Zdroje softwaru
+  - [VSCodium] (https://vscodium.com)
   - [Python official website](https://www.python.org/)
   - [JetBrains - PyCharm](https://www.jetbrains.com/pycharm/)
   - [uv](https://docs.astral.sh/uv/)
