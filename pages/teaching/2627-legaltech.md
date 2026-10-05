@@ -28,9 +28,10 @@ lang: cs
 ## Probraná látka
 Zde bude postupně přibývat probraná látka.
 
-| Datum | Obsah                                                            | Slidy | Poznámky |
-|-------|------------------------------------------------------------------|-------|----------|
-| 29.9. | Úvod, organizace předmětu, motivace, teoretický úvod do výpočetní technologie, filosofie programovacích jazyků, setup potřebného softwaru | [PDF](https://jc.ggu.cz/lt/1.pdf) | - |
+| Datum | Obsah                                                            | Slidy |
+|-------|------------------------------------------------------------------|-------|
+| 29.9. | Úvod, organizace předmětu, motivace, teoretický úvod do výpočetní technologie, filosofie programovacích jazyků, setup potřebného softwaru | [PDF](https://jc.ggu.cz/lt/1.pdf) |
+| 6.10. | Základní python syntaxe, komentáře, proměnné, základní datové typy, podmínky, while cyklus, typové anotace, obecné konvence | [PDF](https://jc.ggu.cz/lt/2.pdf) |
 
 ## Pravidla
 1. **"Don't be a dick"**
@@ -70,10 +71,10 @@ Pro úspěšné dokončení předmětu student musí:
   - [KSP Encyklopedie](https://ksp.mff.cuni.cz/encyklopedie/)
   - [Ponořme se do Python(u) 3](https://knihy.nic.cz/cs/detail/3/)
 - Zdroje softwaru
-  - [VSCodium] (https://vscodium.com)
+  - [VSCodium](https://vscodium.com)
   - [Python official website](https://www.python.org/)
-  - [JetBrains - PyCharm](https://www.jetbrains.com/pycharm/)
   - [uv](https://docs.astral.sh/uv/)
+  - [IDE pro demonstrace na přednáškách](https://www.onlineide.pro/playground/python)
 - Dokumentace knihoven
   - [NumPy](https://numpy.org/doc/stable/)
   - [Pandas](https://pandas.pydata.org/docs/)
