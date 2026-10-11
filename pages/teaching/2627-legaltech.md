@@ -28,10 +28,21 @@ lang: cs
 ## Probraná látka
 Zde bude postupně přibývat probraná látka.
 
-| Datum | Obsah                                                            | Slidy |
-|-------|------------------------------------------------------------------|-------|
-| 29.9. | Úvod, organizace předmětu, motivace, teoretický úvod do výpočetní technologie, filosofie programovacích jazyků, setup potřebného softwaru | [PDF](https://jc.ggu.cz/lt/1.pdf) |
-| 6.10. | Základní python syntaxe, komentáře, proměnné, základní datové typy, podmínky, while cyklus, typové anotace, obecné konvence | [PDF](https://jc.ggu.cz/lt/2.pdf) |
+| Datum   | Obsah                                                            | Slidy |
+|---------|------------------------------------------------------------------|-------|
+| 29. 09. | Úvod, organizace předmětu, motivace, teoretický úvod do výpočetní technologie, filosofie programovacích jazyků, setup potřebného softwaru | [PDF](https://jc.ggu.cz/lt/1.pdf) |
+| 06. 10. | Základní python syntaxe, komentáře, proměnné, základní datové typy, podmínky, while cyklus, typové anotace, obecné konvence | [PDF](https://jc.ggu.cz/lt/2.pdf) |
+| 13. 10. | | |
+| 20. 10. | | |
+| 27. 10. | | |
+| 03. 11. | | |
+| 10. 11. | <!--**Test**--> | |
+| 17. 11. | *Státni svátek* | - |
+| 24. 11. | | |
+| 01. 12. | | |
+| 08. 12. | <!--**Test**--> | |
+| 15. 12. | | |
+
 
 ## Pravidla
 1. **"Don't be a dick"**
@@ -64,6 +75,7 @@ Pro úspěšné dokončení předmětu student musí:
 
 ## Materiály
 - Návody
+  - [Konvence psaní Python kódu](/python-conventions/)
   - [Parsování vstupu v Pythonu 3](https://ksp.mff.cuni.cz/encyklopedie/parsovani-vstupu-python/)
   - [Jak psát dokumentaci](https://ksvi.mff.cuni.cz/%7Ekryl/dokumentace.htm)
 - Učebnice programování
@@ -79,4 +91,7 @@ Pro úspěšné dokončení předmětu student musí:
   - [NumPy](https://numpy.org/doc/stable/)
   - [Pandas](https://pandas.pydata.org/docs/)
   - [Matplotlib](https://matplotlib.org/stable/index.html)
+- Záznamy jiných přednášek
+  - [Programátoři versus realita (Martin "Medvěd" Mareš, Smršť 2024)](https://youtu.be/c4OuPMK_5n0)
+  - [wat](https://www.destroyallsoftware.com/talks/wat) - video, po kterém budete vděční za python
 
