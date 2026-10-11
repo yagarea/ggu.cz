@@ -5,6 +5,7 @@
 @use "header"
 @use "display-page"
 @use "gallery"
+@use "syntax"
 
 // BASICS
 body
@@ -367,17 +368,6 @@ strong
   @media screen and (max-width: 850px)
     &::after
       content: 'below'
-
-//------------------------------------
-
-.highlight
-  background-color: $background-color-highlight
-  margin: 0.5em
-  padding: 1em
-
-.highlighter-rouge
-  background-color: $background-color
-  padding: 2px 4px
 
 
 // MEDIA

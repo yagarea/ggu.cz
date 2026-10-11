@@ -1,0 +1,67 @@
+@use "theme" as *
+
+// Code blocks and the token spans Rouge puts in them. Kramdown renders a fenced
+// block as div.highlighter-rouge > div.highlight > pre.highlight > code, and
+// inline `code` as code.highlighter-rouge.
+
+code, pre
+  font-family: "DejaVu Sans Mono", monospace
+
+code
+  font-size: 0.9em
+
+code.highlighter-rouge
+  padding: 2px 4px
+  background-color: $background-color
+  border-radius: 3px
+
+div.highlighter-rouge
+  margin: 1em 0
+
+pre.highlight
+  margin: 0
+  padding: 1em
+  overflow-x: auto
+  background-color: $background-color-highlight
+  border-radius: 5px
+  line-height: 1.45
+
+//------------------------------------ tokens
+
+.highlight
+  .c, .ch, .cd, .cm, .cpf, .c1, .cs, .go, .gl
+    color: $code-comment-color
+    font-style: italic
+
+  .k, .kd, .kn, .kp, .kr, .kv, .ow, .cp, .nt, .si, .gp
+    color: $code-keyword-color
+
+  .s, .sa, .sb, .sc, .dl, .sd, .s2, .sh, .sx, .s1, .sr, .gi
+    color: $code-string-color
+
+  .kc, .l, .ld, .m, .mb, .mf, .mh, .mi, .il, .mo, .mx, .no, .ss, .se, .ni, .nv, .vc, .vg, .vi, .vm
+    color: $code-constant-color
+
+  .nf, .fm, .nd, .gh, .gu
+    color: $code-function-color
+
+  .kt, .nb, .bp, .nc, .ne, .nn, .na
+    color: $code-type-color
+
+  .err, .gr, .gt, .gd
+    color: $code-error-color
+
+  .ge, .ges
+    font-style: italic
+
+  .gs, .ges, .gh, .gu, .gp
+    font-weight: bold
+
+//------------------------------------ paper
+
+@media print
+  code.highlighter-rouge, pre.highlight
+    background-color: transparent
+
+  pre.highlight
+    border: 1px solid #ccc
