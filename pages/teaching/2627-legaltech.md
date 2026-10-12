@@ -10,9 +10,11 @@ lang: cs
 
 {% splitter %}
 ### Informace
-- Kdy: úterý, 10:00
-- Kde: PF, místnost 120
-- Kód předmětu: `HDPV0226`
+- Kdy: _Úterý, 10:00_
+- Kde: _PF, místnost 120_
+- Kód předmětu: _`HDPV0226` [[SIS](https://is.cuni.cz/studium/predmety/index.php?do=predmet&kod=HDPV0226)]_
+- Konzultační hodiny: _Čtvrtek dopoledne, po domluvě_
+- Kredity: _4_
 
 ---
 
@@ -20,6 +22,7 @@ lang: cs
 - [**Honza Černý**](https://blackblog.cz/)
   - E-mail: [cerny@matfyz.cz](mailto:cerny@matfyz.cz)
   - Discord: [@honzacerny](https://discordapp.com/users/755526719867453521)
+  - *Pokud máte rádi nějakého méně známého hudebního interpreta, budu moc rád, když mi pošlete tip. Nezáleží na žánru.*
 - [**Tom Knap**](https://prf.cuni.cz/detail-cloveka/100033429190)
   - E-mail: [tomas.knap@prf.cuni.cz](mailto:tomas.knap@prf.cuni.cz)
   - Discord: [@tomjk](https://discordapp.com/users/440846866825871361)
@@ -37,7 +40,7 @@ Zde bude postupně přibývat probraná látka.
 | 27. 10. | | |
 | 03. 11. | | |
 | 10. 11. | <!--**Test**--> | |
-| 17. 11. | *Státni svátek* | - |
+| 17. 11. | *Státní svátek* | - |
 | 24. 11. | | |
 | 01. 12. | | |
 | 08. 12. | <!--**Test**--> | |
@@ -93,5 +96,5 @@ Pro úspěšné dokončení předmětu student musí:
   - [Matplotlib](https://matplotlib.org/stable/index.html)
 - Záznamy jiných přednášek
   - [Programátoři versus realita (Martin "Medvěd" Mareš, Smršť 2024)](https://youtu.be/c4OuPMK_5n0)
-  - [wat](https://www.destroyallsoftware.com/talks/wat) - video, po kterém budete vděční za python
+  - [WAT](https://www.destroyallsoftware.com/talks/wat) - video primárně o dynamickém typování, po kterém budete vděční za python
 
