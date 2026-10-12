@@ -9,9 +9,10 @@ lang: cs
 Konvence nejsou pravidla jazyka. Kód poběží, i když je porušíte. Dodržují se proto, aby ho dokázal přečíst i někdo jiný (a vy za měsíc). Oficiální doporučení se jmenuje [PEP 8](https://peps.python.org/pep-0008/), tohle je jeho zkrácená verze.
 
 ## Pojmenování
-- **Proměnné a funkce:** malá písmena, slova oddělená podtržítkem: `pocet_smluv`, `nacti_soubor()`.
-- **Konstanty** (hodnoty, které se nemění): velká písmena: `MAX_DELKA = 100`.
-- **Třídy:** každé slovo velkým písmenem, bez podtržítek: `SmluvniStrana`.
+- **Proměnné a funkce:** malá písmena, slova oddělená podtržítkem: `pocet_smluv`, `nacti_soubor()`. Tomuto stylu se říká **snake_case**.
+- **Konstanty** (hodnoty, které se nemění): velká písmena s podtržítky: `MAX_DELKA = 100`. Říká se mu **UPPER_SNAKE_CASE** nebo **SCREAMING_SNAKE_CASE**.
+- **Třídy:** každé slovo začíná velkým písmenem, bez podtržítek: `SmluvniStrana`. Říká se mu **PascalCase**.
+- Styl **camelCase** (`pocetSmluv`, první slovo malé, další velkým) Python nepoužívá. Potkáte ho v JavaScriptu nebo Javě.
 - Názvy mají říkat, co věc obsahuje nebo dělá. `x` a `data` jsou skoro vždy špatně, `cena_bez_dph` je dobře.
 - Pište anglicky, nebo česky bez diakritiky. Hlavně to nemíchejte.
 
@@ -43,7 +44,8 @@ class SmluvniStrana:
 - Za dvojtečkou ve slovníku mezera, před ní ne: `{"jmeno": "Jan"}`.
 - Hned za otevírací a před zavírací závorkou mezera není: `seznam[0]`, `funkce(x)`, ne `funkce( x )`.
 - Mezi názvem funkce a závorkou mezera není: `print("ahoj")`, ne `print ("ahoj")`.
-- Před dvojtečkou na konci `if`, `for`, `def` mezera není: `if x > 0:`.
+- Před dvojtečkou na konci `if`, `elif`, `else`, `for`, `while` a `def` mezera není: `else:`, ne `else :`.
+- `and`, `or` a `not` jsou operátory, ne funkce. Kolem nich je mezera: `if not hotovo:`, ne `if not(hotovo):`.
 - Na konci řádku nemají být žádné mezery navíc.
 
 ```python
@@ -63,7 +65,7 @@ slovnik = {"a": 1, "b": 2}
 - Řádek by neměl být delší než zhruba **80–100 znaků**. Dlouhý řádek rozdělte uvnitř závorky a pokračování odsaďte.
 - Funkce a třídy oddělujte **dvěma prázdnými řádky**, logické kroky uvnitř funkce jedním.
 - Víc než dva prázdné řádky za sebou nikdy, uvnitř funkce nejvýš jeden.
-- Soubor končí jedním prázdným řádkem.
+- Za posledním řádkem kódu je jeden konec řádku (Enter), ale žádné prázdné řádky navíc.
 
 ```python
 # špatně
@@ -93,6 +95,17 @@ vysledek = spocitej(
 - Komentář vysvětluje **proč**, ne **co**. Co dělá řádek `cena = cena * 1.21`, je vidět; že jde o DPH, už ne.
 - Pište je tak, aby platily i po změně kódu. Zastaralý komentář je horší než žádný.
 - Každá funkce má na začátku krátký popis v trojitých uvozovkách (tzv. docstring): co dělá, co bere a co vrací.
+- Komentář za kódem oddělte aspoň dvěma mezerami, za `#` patří jedna mezera. Komentář na samostatném řádku také začíná `# ` s mezerou.
+
+```python
+# špatně
+#načtení vstupu
+sazba = 21 #základní sazba DPH
+
+# dobře
+# sazbu mění zákon, proto je v proměnné
+sazba = 21  # základní sazba DPH v ČR
+```
 
 ```python
 # špatně: komentář jen opakuje kód
