@@ -26,6 +26,23 @@ pre.highlight
   border-radius: 5px
   line-height: 1.45
 
+//------------------------------------ keys
+
+// A keycap: thin light rim on top, thicker dark edge below.
+kbd
+  display: inline-block
+  margin: 0 0.1em
+  padding: 0.05em 0.45em
+  font-family: "DejaVu Sans Mono", monospace
+  font-size: 0.85em
+  line-height: 1.5
+  white-space: nowrap
+  color: $text-color
+  background-color: $background-color
+  border: 1px solid $hairline-color
+  border-radius: 4px
+  box-shadow: 0 2px 0 $shadow-color, inset 0 1px 0 $hairline-color
+
 //------------------------------------ tokens
 
 .highlight
@@ -62,6 +79,11 @@ pre.highlight
 @media print
   code.highlighter-rouge, pre.highlight
     background-color: transparent
+
+  kbd
+    background-color: transparent
+    border-color: #999
+    box-shadow: none
 
   pre.highlight
     border: 1px solid #ccc

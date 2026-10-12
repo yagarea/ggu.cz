@@ -202,9 +202,18 @@ if zakaznik is None:
 ```
 
 ## Nástroje
-Nemusíte si to všechno pamatovat. Nástroj [Ruff](https://docs.astral.sh/ruff/) kód zkontroluje a naformátuje za vás, stačí ho spustit:
+Nemusíte si to všechno pamatovat. Většinu pravidel pohlídá [Ruff](https://docs.astral.sh/ruff/): kód zkontroluje a mezery, odsazení i prázdné řádky opraví sám.
 
-```
+### Doplněk pro VSCodium
+Nainstalujte si doplněk [Ruff](https://open-vsx.org/vscode/item?itemName=charliermarsh.ruff). Chyby uvidíte podtržené už při psaní a soubor naformátujete zkratkou <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>.
+
+### Samostatný program
+Nainstaluje se příkazem `pip install ruff` a má dva příkazy, které budete používat:
+
+```sh
 ruff format soubor.py
 ruff check soubor.py
 ```
+
+- `ruff format` soubor **přepíše**: srovná mezery, odsazení, prázdné i dlouhé řádky. Mění jen vzhled, ne to, co kód dělá.
+- `ruff check` nic nemění, jen **vypíše**, co zbývá opravit ručně: nepoužitý import, porovnání `== None` a podobně.
