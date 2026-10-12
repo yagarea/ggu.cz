@@ -6,7 +6,9 @@ permalink: /python-conventions/
 lang: cs
 ---
 
-Konvence nejsou pravidla jazyka. Kód poběží, i když je porušíte. Dodržují se proto, aby ho dokázal přečíst i někdo jiný (a vy za měsíc). Oficiální doporučení se jmenuje [PEP 8](https://peps.python.org/pep-0008/), tohle je jeho zkrácená verze.
+Konvence nejsou pravidla jazyka. Kód poběží, i když je porušíte. Dodržují se proto,
+aby ho dokázal přečíst i někdo jiný (a vy za měsíc). Oficiální doporučení se jmenuje
+[PEP 8](https://peps.python.org/pep-0008/), tohle je jeho zkrácená verze.
 
 ## Pojmenování
 - **Proměnné a funkce:** malá písmena, slova oddělená podtržítkem: `pocet_smluv`, `nacti_soubor()`. Tomuto stylu se říká **snake_case**.
