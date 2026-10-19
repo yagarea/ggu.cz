@@ -16,6 +16,10 @@ lang: cs
 - Konzultační hodiny: _Čtvrtek dopoledne, po domluvě_
 - Kredity: _4_
 
+### Užitečné odkazy
+- [Konvence psaní Python kódu](/python-conventions/)
+- [Jak používat debugger ve VS Codium](https://www.youtube.com/watch?v=iHVpl9sZKGw)
+
 ---
 
 ### Vyučující
@@ -31,11 +35,11 @@ lang: cs
 ## Probraná látka
 Zde bude postupně přibývat probraná látka.
 
-| Datum   | Obsah                                                            | Slidy |
-|---------|------------------------------------------------------------------|-------|
+| Datum   | Obsah                                                             | Slidy |
+|---------|-------------------------------------------------------------------|-------|
 | 29. 09. | Úvod, organizace předmětu, motivace, teoretický úvod do výpočetní technologie, filosofie programovacích jazyků, setup potřebného softwaru | [PDF](https://jc.ggu.cz/lt/1.pdf) |
 | 06. 10. | Základní python syntaxe, komentáře, proměnné, základní datové typy, podmínky, while cyklus, typové anotace, obecné konvence | [PDF](https://jc.ggu.cz/lt/2.pdf) |
-| 13. 10. | | |
+| 13. 10. | Postupy při řešení úkolů, datové struktury: list, tuple, set, frozenset, dict, for cyklus, continue, break | [PDF](https://jc.ggu.cz/lt/3.pdf) |
 | 20. 10. | | |
 | 27. 10. | | |
 | 03. 11. | | |
@@ -78,7 +82,6 @@ Pro úspěšné dokončení předmětu student musí:
 
 ## Materiály
 - Návody
-  - [Konvence psaní Python kódu](/python-conventions/)
   - [Parsování vstupu v Pythonu 3](https://ksp.mff.cuni.cz/encyklopedie/parsovani-vstupu-python/)
   - [Jak psát dokumentaci](https://ksvi.mff.cuni.cz/%7Ekryl/dokumentace.htm)
 - Učebnice programování
