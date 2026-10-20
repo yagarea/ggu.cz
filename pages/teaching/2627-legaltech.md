@@ -43,7 +43,7 @@ Zde bude postupně přibývat probraná látka.
 | 20. 10. | Funkce, lifetime, syntax pro práci s knihovnami, připomenutí matematiky, koncept časové složitosti, vnitřní pricipy fungování pole, spojového seznamu, množiny a slovníku, P vs PN, | [PDF](https://jc.ggu.cz/lt/4.pdf) |
 | 27. 10. | | |
 | 03. 11. | **Test** | |
-| 10. 11. | | |
+| 10. 11. | *Týden fakulty* | - |
 | 17. 11. | *Státní svátek* | - |
 | 24. 11. | | |
 | 01. 12. | | |
