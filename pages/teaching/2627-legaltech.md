@@ -43,7 +43,7 @@ Zde bude postupně přibývat probraná látka.
 | 13. 10. | Postupy při řešení úkolů, datové struktury: list, tuple, set, frozenset, dict, for cyklus, continue, break | [PDF](https://jc.ggu.cz/lt/3.pdf) |
 | 20. 10. | Funkce, lifetime, syntax pro práci s knihovnami, připomenutí matematiky, koncept časové složitosti, vnitřní pricipy fungování pole, spojového seznamu, množiny a slovníku, P vs PN | [PDF](https://jc.ggu.cz/lt/4.pdf) |
 | 27. 10. | Datové formáty a práce se soubory | [PDF](https://jc.ggu.cz/lt/5.pdf) |
-| 03. 11. | **Test** | |
+| 03. 11. | **Test** ([vzorové otázky](https://jc.ggu.cz/lt/vzorak1.pdf), [vzorové otázky s řešením](https://jc.ggu.cz/lt/vzorak1-reseni.pdf)) | - |
 | 10. 11. | *Týden fakulty* | - |
 | 17. 11. | *Státní svátek* | - |
 | 24. 11. | | |
