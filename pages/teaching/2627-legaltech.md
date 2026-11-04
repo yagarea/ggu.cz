@@ -44,7 +44,7 @@ Zde bude postupně přibývat probraná látka.
 | 20. 10. | Funkce, lifetime, syntax pro práci s knihovnami, připomenutí matematiky, koncept časové složitosti, vnitřní pricipy fungování pole, spojového seznamu, množiny a slovníku, P vs PN | [PDF](https://jc.ggu.cz/lt/4.pdf) |
 | 27. 10. | Datové formáty a práce se soubory | [PDF](https://jc.ggu.cz/lt/5.pdf) |
 | 03. 11. | **Test** ([vzorové otázky](https://jc.ggu.cz/lt/vzorak1.pdf), [vzorové otázky s řešením](https://jc.ggu.cz/lt/vzorak1-reseni.pdf)) | - |
-| 10. 11. | *Týden fakulty* | - |
+| 10. 11. | *Týden fakulty* - Náhradní přednáška: [Programátoři versus realita (Martin "Medvěd" Mareš, Smršť 2024)](https://youtu.be/c4OuPMK_5n0) | - |
 | 17. 11. | *Státní svátek* | - |
 | 24. 11. | | |
 | 01. 12. | | |
