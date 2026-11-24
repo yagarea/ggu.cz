@@ -46,7 +46,7 @@ Zde bude postupně přibývat probraná látka.
 | 03. 11. | **Test** ([vzorové otázky](https://jc.ggu.cz/lt/vzorak1.pdf), [vzorové otázky s řešením](https://jc.ggu.cz/lt/vzorak1-reseni.pdf)) | - |
 | 10. 11. | *Týden fakulty* - Náhradní přednáška: [Programátoři versus realita (Martin "Medvěd" Mareš, Smršť 2024)](https://youtu.be/c4OuPMK_5n0) | - |
 | 17. 11. | *Státní svátek* | - |
-| 24. 11. | | |
+| 24. 11. | | [PDF](https://jc.ggu.cz/lt/6.pdf) |
 | 01. 12. | | |
 | 08. 12. | | |
 | 15. 12. | **Test** | |
